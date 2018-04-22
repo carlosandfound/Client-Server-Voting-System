@@ -17,7 +17,7 @@
 #include "utils.h"
 #include "map.h"
 
-#define SERVER_PORT 7501
+#define SERVER_PORT 5000
 
 char* count_candidates(char* fpath) {
   //printf("FPATH: %s\n", fpath);
@@ -68,11 +68,12 @@ char* count_candidates(char* fpath) {
       candidates = candidates->next;
     }
     candidates = NULL;
-    //printf("COUNTS: %s\n", candidate_counts);
+    printf("COUNTS: %s\n", candidate_counts);
     return candidate_counts;
   }
 }
 
+/*
 char* get_request(char* dirpath, char* line) {
   //printf("Getting request for line:.........%s\n", line);
   char** splitString = malloc(sizeof(char)*1024);
@@ -130,7 +131,9 @@ char* get_request(char* dirpath, char* line) {
     exit(1);
   }
 }
+*/
 
+/*
 void read_requests(int sock, char* req_path) {
   if (!isFilePopulated(req_path)) {
     printf("Error: Input req file doesn't exist or is empty\n");
@@ -166,15 +169,122 @@ void read_requests(int sock, char* req_path) {
     fclose(file);
   }
 }
+*/
+
+int createRequest(char* line, char* request) {
+  char** splitLine = malloc(sizeof(char)*strlen(line));
+  int numTokens = makeargv(line, " ", &splitLine);
+
+  if (strcmp(splitLine[0], "Open_Polls") == 0) {
+    sprintf(request, "OP;%s;\0", splitLine[1]);
+  } else if (strcmp(splitLine[0], "Close_Polls") == 0) {
+    sprintf(request, "CP;%s;\0", splitLine[1]);
+  } else if (strcmp(splitLine[0], "Add_Votes") == 0) {
+    char* voteCounts = count_candidates(splitLine[2]);
+    // NOTE: not sure if freeing will modify request...
+    sprintf(request, "AV;%s;%s\0", splitLine[1], voteCounts);
+    free(voteCounts);
+  } else if (strcmp(splitLine[0], "Remove_Votes") == 0) {
+    char* voteCounts = count_candidates(splitLine[2]);
+    // NOTE: not sure if freeing will modify request...
+    sprintf(request, "RV;%s;%s\0", splitLine[1], voteCounts);
+    free(voteCounts);
+  } else if (strcmp(splitLine[0], "Count_Votes") == 0) {
+    sprintf(request, "CV;%s\0", splitLine[1]);
+  } else if (strcmp(splitLine[0], "Return_Winner") == 0) {
+    sprintf(request, "RW;;\0");
+  } else {
+    // error state
+    return 1;
+  }
+
+  printf("sending request: %s\n", request);
+  return 0;
+}
+
+void sendRequest(char* ip, int port, char* request) {
+  // connect to server
+  int sock = socket(AF_INET , SOCK_STREAM , 0);
+
+  struct sockaddr_in address;
+	address.sin_family = AF_INET;
+	address.sin_port = htons(port);
+	address.sin_addr.s_addr = inet_addr(ip);
+
+  if (connect(sock, (struct sockaddr *) &address, sizeof(address)) == 0) {
+    // send(sock, (void*)request, strlen(request), 0);
+    write(sock, (void*)request, strlen(request)+1);
+
+    // print response from server
+    char response[1024]; // assumed max response size of 1024
+    read(sock, response, 1024);
+
+    printf("response: %s\n", response);
+
+    close(sock);
+  } else {
+    perror("Connection failed!");
+  }
+}
 
 int main(int argc, char** argv) {
 
 	if (argc != 4) {
+    // req file, server ip, server port
 		printf("Wrong number of args, expected %d, given %d\n", 4, argc - 1);
 		exit(1);
 	} else {
     printf("IP: %s\n", argv[2]);
     printf("PORT: %s\n", argv[3]);
+
+    // read file
+    if (!isFilePopulated(argv[1])) {
+      printf("Error: Input req file doesn't exist or is empty\n");
+      exit(1);
+    }
+
+    // read input file and send requests
+    FILE* reqFile = fopen(argv[1], "r");
+
+    char* line = NULL;
+    size_t len = 0;
+    ssize_t read;
+
+    // change directory to that of input file
+    char** splitPath = malloc(sizeof(char)*strlen(argv[1]));
+    int pathTokens = makeargv(argv[1], "/", &splitPath);
+    char* inputPath = malloc(sizeof(char)*strlen(argv[1]));
+    strcpy(inputPath, "");
+
+    for (int i = 0; i < pathTokens - 1; i++) {
+      strcat(inputPath, splitPath[i]);
+      strcat(inputPath, "/");
+    }
+
+    printf("%s\n", inputPath);
+
+    chdir(inputPath);
+    free(splitPath);
+    free(inputPath);
+
+    while ((read = getline(&line, &len, reqFile)) != -1) {
+      // filter newlines
+      if (line[read - 1] == '\n') {
+        line[read - 1] = '\0';
+      }
+
+      // max msg size assumed to be 1024
+      char* req = malloc(sizeof(char)*1024);
+      int err = createRequest(line, req);
+
+      if (err != 1) {
+        sendRequest(argv[2], atoi(argv[3]), req);
+      }
+
+      free(req);
+    }
+
+    /*
     int server_ip = atoi(argv[2]);
     int server_port = atoi(argv[3]);
 
@@ -192,5 +302,6 @@ int main(int argc, char** argv) {
   	} else {
   		perror("Connection failed!");
   	}
+    */
   }
 }

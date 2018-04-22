@@ -336,9 +336,25 @@ char* findWinner(struct List* polls) {
 
 char* countVotes(struct List* polls, char* region) {
   struct Poll* poll = findPoll(polls, region);
+
   // assume max string length
   char* msg = malloc(sizeof(char)*100);
   strcpy(msg, "");
+
+  // should not be null
+  if (poll == NULL) {
+    printf("Trying to insert count votes of unknown poll");
+    sprintf(msg, "NR;%s\0", region);
+    return msg;
+  }
+
+  if (poll->candidates->next == NULL) {
+    // send no votes msg
+    sprintf(msg, "SC;No votes.\0");
+    return msg;
+  } else {
+    strcat(msg, "SC;");
+  }
 
   for (struct Map* c = poll->candidates->next; c != NULL; c = c->next) {
     char* info = malloc(sizeof(char)*10);
@@ -354,6 +370,7 @@ char* countVotes(struct List* polls, char* region) {
     free(info);
   }
 
+  strcat(msg, "\0");
   return msg;
 }
 
