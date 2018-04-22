@@ -216,7 +216,7 @@ void sendRequest(char* ip, int port, char* request) {
     write(sock, (void*)request, strlen(request)+1);
 
     // print response from server
-    char response[1024]; // assumed max response size of 1024
+    char* response = malloc(sizeof(char)*1024); // assumed max response size of 1024
     read(sock, response, 1024);
 
     printf("response: %s\n", response);
@@ -267,6 +267,7 @@ int main(int argc, char** argv) {
     free(splitPath);
     free(inputPath);
 
+    // translate each line of file and send translation to server
     while ((read = getline(&line, &len, reqFile)) != -1) {
       // filter newlines
       if (line[read - 1] == '\n') {
@@ -283,25 +284,5 @@ int main(int argc, char** argv) {
 
       free(req);
     }
-
-    /*
-    int server_ip = atoi(argv[2]);
-    int server_port = atoi(argv[3]);
-
-    int sock = socket(AF_INET , SOCK_STREAM , 0);
-
-  	// Specify an address to connect to (we use the local host or 'loop-back' address).
-  	struct sockaddr_in address;
-  	address.sin_family = AF_INET;
-    address.sin_port = htons(atoi(argv[3]));
-    address.sin_addr.s_addr = inet_addr(argv[2]);
-
-    if (connect(sock, (struct sockaddr *) &address, sizeof(address)) == 0) {
-      read_requests(sock, argv[1]);
-  		close(sock);
-  	} else {
-  		perror("Connection failed!");
-  	}
-    */
   }
 }

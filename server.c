@@ -142,7 +142,7 @@ char* addVotes(struct List* polls, char* region, char* votes) {
   char* msg = malloc(sizeof(char)*100);
 
   if (poll == NULL) {
-    printf("Trying to insert into unknown poll");
+    printf("Trying to insert into unknown poll\n");
     sprintf(msg, "NR;%s\0", region);
     return msg;
   }
@@ -199,14 +199,14 @@ char* addVotes(struct List* polls, char* region, char* votes) {
 }
 
 char* removeVotes(struct List* polls, char* region, char* votes) {
-  printf("add votes: region: %s, votes: %s\n", region, votes);
+  printf("remove votes: region: %s, votes: %s\n", region, votes);
 
   // should not be null
   struct Poll* poll = findPoll(polls, region);
   char* msg = malloc(sizeof(char)*100);
 
   if (poll == NULL) {
-    printf("Trying to insert into unknown poll");
+    printf("Trying to insert into unknown poll\n");
     sprintf(msg, "NR;%s\0", region);
     return msg;
   }
@@ -220,8 +220,6 @@ char* removeVotes(struct List* polls, char* region, char* votes) {
   char** splitData = malloc(sizeof(char)*strlen(votes));
   int numCandidates = makeargv(votes, ",", &splitData);
 
-  pthread_mutex_lock(poll->lock);
-
   for (int i = 0; i < numCandidates; i++) {
     char** splitCandidate = malloc(sizeof(char)*4);
     makeargv(splitData[i], ":", &splitCandidate);
@@ -231,21 +229,23 @@ char* removeVotes(struct List* polls, char* region, char* votes) {
 
     if (candidate == NULL) {
       printf("Trying to subtract from non-existent candidate\n");
-      sprintf(msg, "IS;%s\0", candidate->key);
+      sprintf(msg, "IS;%s\0", splitCandidate[0]);
       return msg;
     } else if ((int)candidate->value - amount < 1) {
+      pthread_mutex_lock(poll->lock);
       insertIntoMap(poll->candidates, strdup(splitCandidate[0]), (void*)0);
+      pthread_mutex_unlock(poll->lock);
     } else {
+      pthread_mutex_unlock(poll->lock);
       insertIntoMap(
         poll->candidates,
         strdup(splitCandidate[0]),
         (void*)((int)candidate->value) - amount);
+      pthread_mutex_unlock(poll->lock);
     }
 
     free(splitCandidate);
   }
-
-  pthread_mutex_unlock(poll->lock);
 
   // aggreate upwards
   if (poll->parent != NULL) {
@@ -273,26 +273,33 @@ char* setStatus(struct List* polls, char* region, unsigned int status) {
 
   // should not be null
   if (poll == NULL) {
-    printf("Trying to insert into unknown poll");
+    printf("Trying to insert into unknown poll\n");
     sprintf(msg, "NR;%s\0", region);
     return msg;
   }
 
-  if (poll->status == status) {
-    printf("Trying to set status to same status");
+  if (poll->status == status || (poll->status == 2 && status == 0)) {
+    printf("Trying to set status to same status\n");
     sprintf(msg, "PF;%s:%s\0", region, status == 0 ? "Closed" : "Open");
     return msg;
   }
 
-  if (poll->status > 2) {
-    printf("Trying to reopen poll");
+  if (poll->status > 1) {
+    printf("Trying to reopen poll\n");
     sprintf(msg, "RR;%s\0", region);
     return msg;
   }
 
   // set parent status
   pthread_mutex_lock(poll->lock);
-  poll->status += status;
+
+  if (poll->status == 1 && status == 0) {
+    poll->status = 2;
+  } else {
+    poll->status = status;
+  }
+
+  // printf("change status: poll: %s, status: %i\n", poll->name, poll->status);
   pthread_mutex_unlock(poll->lock);
 
   // recursively set status of all children
@@ -317,7 +324,7 @@ char* findWinner(struct List* polls) {
     struct Poll* p = (struct Poll*)n->value;
 
     if (p->status == 1) {
-      printf("Trying to find winner in open poll");
+      printf("Trying to find winner in open poll\n");
       sprintf(msg, "RO;%s\0", p->name);
       return msg;
     }
@@ -343,7 +350,7 @@ char* countVotes(struct List* polls, char* region) {
 
   // should not be null
   if (poll == NULL) {
-    printf("Trying to insert count votes of unknown poll");
+    printf("Trying to insert count votes of unknown poll\n");
     sprintf(msg, "NR;%s\0", region);
     return msg;
   }
@@ -395,10 +402,14 @@ void handleRequest(struct ThreadArgs* args) {
   // Buffer for data.
   // assumed max buffer length
   int bufLength = 3000;
-  char buffer[bufLength];
+  char* buffer = malloc(sizeof(char)*bufLength);
 
   int readSize = recv(args->socket, (void*)buffer, bufLength, 0);
-  // printf("Message Received! size: %i, message: %s\n", readSize, buffer);
+  printf(
+    "Request received from client at %s:%i\n",
+    inet_ntoa(args->clientAddress->sin_addr),
+    (int)ntohs(args->clientAddress->sin_port));
+  printf("size: %i, message: %s\n", readSize, buffer);
 
   char** msgStrings = malloc(sizeof(char)*bufLength);
   int numTokens = makeargv(buffer, ";", &msgStrings);
@@ -439,17 +450,24 @@ void handleRequest(struct ThreadArgs* args) {
   }
 
   // send responseData
+  printf(
+    "Sending response to client at %s:%i\n",
+    inet_ntoa(args->clientAddress->sin_addr),
+    (int)ntohs(args->clientAddress->sin_port));
+
   printf("response: %s\n", responseData);
   write(args->socket, responseData, strlen(responseData));
 
   close(args->socket);
   printf(
-    "closed connection with client at %s:%i\n",
+    "Closed connection with client at %s:%i\n",
     inet_ntoa(args->clientAddress->sin_addr),
     (int)ntohs(args->clientAddress->sin_port));
 
   // free args and stuff
+  free(responseData);
   free(msgStrings);
+  free(buffer);
 }
 
 int main(int argc, char** argv) {
@@ -490,7 +508,13 @@ int main(int argc, char** argv) {
 
     // spawn thread to handle request
     if (args->socket > - 1) {
+      printf(
+        "Connection initiated from client at at %s:%i\n",
+        inet_ntoa(args->clientAddress->sin_addr),
+        (int)ntohs(args->clientAddress->sin_port));
+
       pthread_create(&t, NULL, handleRequest, args);
+      pthread_detach(&t);
     }
   }
 }
