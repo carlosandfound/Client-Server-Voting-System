@@ -468,6 +468,8 @@ void handleRequest(struct ThreadArgs* args) {
   free(responseData);
   free(msgStrings);
   free(buffer);
+
+  free(args->clientAddress);
 }
 
 int main(int argc, char** argv) {
@@ -517,4 +519,21 @@ int main(int argc, char** argv) {
       pthread_detach(&t);
     }
   }
+
+  // clean up
+  close(sock);
+
+  for (struct List* n = polls->next; n != NULL; n = n->next) {
+    // free poll
+    struct Poll* p = (struct Poll*)n->value;
+
+    free(p->name);
+    free(p->children);
+    free(p->candidates);
+    free(p->lock);
+
+    free(p);
+  }
+
+  free(polls);
 }
