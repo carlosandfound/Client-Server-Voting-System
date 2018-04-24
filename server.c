@@ -179,6 +179,8 @@ char* addVotes(struct List* polls, char* region, char* votes) {
   }
 
   // aggreate upwards
+  // NOTE no longer need to aggreate upwards
+  /*
   if (poll->parent != NULL) {
     msg = addVotes(polls, poll->parent->name, votes);
 
@@ -186,6 +188,7 @@ char* addVotes(struct List* polls, char* region, char* votes) {
       return msg;
     }
   }
+  */
 
   // verify candidates
   for (struct Map* c = poll->candidates->next; c != NULL; c = c->next) {
@@ -248,6 +251,8 @@ char* removeVotes(struct List* polls, char* region, char* votes) {
   }
 
   // aggreate upwards
+  // NOTE no longer need to aggreate upwards
+  /*
   if (poll->parent != NULL) {
     msg = removeVotes(polls, poll->parent->name, votes);
 
@@ -255,6 +260,7 @@ char* removeVotes(struct List* polls, char* region, char* votes) {
       return msg;
     }
   }
+  */
 
   // verify candidates
   for (struct Map* c = poll->candidates->next; c != NULL; c = c->next) {
@@ -381,6 +387,37 @@ char* countVotes(struct List* polls, char* region) {
   return msg;
 }
 
+char* addRegion(struct List* polls, char* parentName, char* newRegion) {
+  struct Poll* parent = findPoll(polls, parentName);
+
+  // assume max string length
+  char* msg = malloc(sizeof(char)*100);
+  strcpy(msg, "");
+
+  // should not be null
+  if (parent == NULL) {
+    printf("Trying to add region to non-existent parent\n");
+    sprintf(msg, "NR;%s\0", parent);
+    return msg;
+  }
+
+  struct Poll* newPoll = createPoll(strdup(newRegion));
+
+  pthread_mutex_lock(newPoll->lock);
+  newPoll->parent = parent;
+  pthread_mutex_unlock(newPoll->lock);
+
+
+  struct List* ln = createListNode((void*)newPoll);
+  struct List* pn = createListNode((void*)newPoll);
+
+  addNode(polls, ln);
+
+  pthread_mutex_lock(parent->lock);
+  addNode(parent->children, pn);
+  pthread_mutex_unlock(parent->lock);
+}
+
 unsigned int isLeaf(struct List* polls, char* region) {
   for (struct List* n = polls->next; n != NULL; n = n->next) {
     struct Poll* p = (struct Poll*)n->value;
@@ -444,6 +481,8 @@ void handleRequest(struct ThreadArgs* args) {
     responseData = findWinner(args->polls);
   } else if (strcmp(msgStrings[0], "CV") == 0) {
     responseData = countVotes(args->polls, msgStrings[1]);
+  } else if (strcmp(msgStrings[0], "AR") == 0) {
+    responseData = addRegion(args->polls, msgStrings[1], msgStrings[2]);
   } else {
     responseData = malloc(sizeof(char)*6);
     sprintf(responseData, "UC;%s\0", msgStrings[0]);
@@ -490,10 +529,15 @@ int main(int argc, char** argv) {
 	servAddress.sin_family = AF_INET;
 	servAddress.sin_port = htons(atoi(argv[2]));
 	servAddress.sin_addr.s_addr = htonl(INADDR_ANY);
-	bind(sock, (struct sockaddr *) &servAddress, sizeof(servAddress));
 
-  listen(sock, MAX_CONNECTIONS);
-  printf("server listening on %s\n", argv[2]);
+  if (bind(sock, (struct sockaddr *) &servAddress, sizeof(servAddress)) != 0 ||
+    listen(sock, MAX_CONNECTIONS) != 0) {
+      perror("error connecting to socket");
+      exit(1);
+  } else {
+    printf("server listening on %s\n", argv[2]);
+  }
+
 
   while (1) {
     // Now accept the incoming connections.
@@ -511,7 +555,7 @@ int main(int argc, char** argv) {
     // spawn thread to handle request
     if (args->socket > - 1) {
       printf(
-        "Connection initiated from client at at %s:%i\n",
+        "Connection initiated from client at %s:%i\n",
         inet_ntoa(args->clientAddress->sin_addr),
         (int)ntohs(args->clientAddress->sin_port));
 
@@ -521,6 +565,7 @@ int main(int argc, char** argv) {
   }
 
   // clean up
+  shutdown(sock, SHUT_RDWR);
   close(sock);
 
   for (struct List* n = polls->next; n != NULL; n = n->next) {

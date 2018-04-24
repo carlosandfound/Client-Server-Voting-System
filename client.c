@@ -193,6 +193,8 @@ int createRequest(char* line, char* request) {
     sprintf(request, "CV;%s\0", splitLine[1]);
   } else if (strcmp(splitLine[0], "Return_Winner") == 0) {
     sprintf(request, "RW;;\0");
+  } else if (strcmp(splitLine[0], "Add_Region") == 0) {
+    sprintf(request, "AR;%s;%s\0", splitLine[1], splitLine[2]);
   } else {
     // error state
     return 1;
@@ -211,7 +213,7 @@ void sendRequest(char* ip, int port, char* request) {
 	address.sin_port = htons(port);
 	address.sin_addr.s_addr = inet_addr(ip);
 
-  if (connect(sock, (struct sockaddr *) &address, sizeof(address)) == 0) {
+  if (connect(sock, (struct sockaddr*)&address, sizeof(address)) == 0) {
     // send(sock, (void*)request, strlen(request), 0);
     write(sock, (void*)request, strlen(request)+1);
 
@@ -220,11 +222,11 @@ void sendRequest(char* ip, int port, char* request) {
     read(sock, response, 1024);
 
     printf("response: %s\n", response);
-
-    close(sock);
   } else {
     perror("Connection failed!");
   }
+
+  close(sock);
 }
 
 int main(int argc, char** argv) {
