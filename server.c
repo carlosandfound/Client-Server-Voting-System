@@ -522,7 +522,11 @@ int main(int argc, char** argv) {
   readDag(argv[1], polls);
 
   // Create a TCP socket.
-	int sock = socket(AF_INET , SOCK_STREAM , 0);
+  int sock = socket(AF_INET , SOCK_STREAM , 0);
+	
+  if (setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &(int){ 1 }, sizeof(int)) < 0) {
+    perror("setsockopt(SO_REUSEADDR) failed");
+  }
 
 	// Bind it to a local address.
 	struct sockaddr_in servAddress;
