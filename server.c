@@ -565,7 +565,6 @@ int main(int argc, char** argv) {
   }
 
   // clean up
-  shutdown(sock, SHUT_RDWR);
   close(sock);
 
   for (struct List* n = polls->next; n != NULL; n = n->next) {
