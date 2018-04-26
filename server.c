@@ -20,6 +20,8 @@
 
 #define MAX_CONNECTIONS 100
 
+ssize_t responseBuf = 0;
+
 struct Poll {
   char* name;
   struct Poll* parent;
@@ -111,46 +113,26 @@ void readDag(char* dagPath, struct List* polls) {
     free(pollNames);
   }
 
-  // verify polls
-  // all polls
-  /*
-  for (struct List* n = polls->next; n != NULL; n = n->next) {
-    printf("name: %s\n", ((struct Poll*)(n->value))->name);
-  }
-
-  // polls and children
-  for (struct List* n = polls->next; n != NULL; n = n->next) {
-    struct Poll* parent = (struct Poll*)(n->value);
-    printf("parent: %s, children: ", parent->name);
-
-    for (struct List* c = parent->children->next; c != NULL; c = c->next) {
-      printf("%s ", ((struct Poll*)(c->value))->name);
-    }
-
-    printf("\n");
-  }
-  */
-
   fclose(dagFile);
 }
 
 char* addVotes(struct List* polls, char* region, char* votes) {
-  printf("add votes: region: %s, votes: %s\n", region, votes);
 
   // should not be null
   struct Poll* poll = findPoll(polls, region);
+
   // assumed max response size of 100
-  char* msg = malloc(sizeof(char)*100);
+  char* msg = malloc(sizeof(char)*256);
 
   if (poll == NULL) {
-    printf("Trying to insert into unknown poll\n");
     sprintf(msg, "NR;%s\0", region);
+		responseBuf = 18;
     return msg;
   }
 
   if (poll->status != 1) {
-    printf("Trying to insert into closed poll\n");
     sprintf(msg, "RC;%s\0", region);
+		responseBuf = 18;
     return msg;
   }
 
@@ -178,46 +160,27 @@ char* addVotes(struct List* polls, char* region, char* votes) {
 
     free(splitCandidate);
   }
-
-  // aggreate upwards
-  // NOTE no longer need to aggreate upwards
-  /*
-  if (poll->parent != NULL) {
-    msg = addVotes(polls, poll->parent->name, votes);
-
-    if (strcmp(msg, "SC;\0") != 0) {
-      return msg;
-    }
-  }
-  */
-
-  // verify candidates
-  for (struct Map* c = poll->candidates->next; c != NULL; c = c->next) {
-    printf("candidate: %s, votes: %i\n", c->key, (int)c->value);
-  }
-
   free(splitData);
 
   sprintf(msg, "SC;\0");
+	responseBuf = 5;
   return msg;
 }
 
 char* removeVotes(struct List* polls, char* region, char* votes) {
-  printf("remove votes: region: %s, votes: %s\n", region, votes);
-
   // should not be null
   struct Poll* poll = findPoll(polls, region);
-  char* msg = malloc(sizeof(char)*100);
+  char* msg = malloc(sizeof(char)*256);
 
   if (poll == NULL) {
-    printf("Trying to insert into unknown poll\n");
     sprintf(msg, "NR;%s\0", region);
+		responseBuf = 18;
     return msg;
   }
 
   if (poll->status != 1) {
-    printf("Trying to remove from closed poll\n");
     sprintf(msg, "RC;%s\0", region);
+		responseBuf = 18;
     return msg;
   }
 
@@ -232,8 +195,8 @@ char* removeVotes(struct List* polls, char* region, char* votes) {
     int amount = atoi(splitCandidate[1]);
 
     if (candidate == NULL) {
-      printf("Trying to subtract from non-existent candidate\n");
       sprintf(msg, "IS;%s\0", splitCandidate[0]);
+			responseBuf = 103;
       return msg;
     } else if ((int)candidate->value - amount < 1) {
       pthread_mutex_lock(poll->lock);
@@ -250,50 +213,33 @@ char* removeVotes(struct List* polls, char* region, char* votes) {
 
     free(splitCandidate);
   }
-
-  // aggreate upwards
-  // NOTE no longer need to aggreate upwards
-  /*
-  if (poll->parent != NULL) {
-    msg = removeVotes(polls, poll->parent->name, votes);
-
-    if (strcmp(msg, "SC;\0") != 0) {
-      return msg;
-    }
-  }
-  */
-
-  // verify candidates
-  for (struct Map* c = poll->candidates->next; c != NULL; c = c->next) {
-    printf("candidate: %s, votes: %i\n", c->key, (int)c->value);
-  }
-
   free(splitData);
 
   sprintf(msg, "SC;\0");
+	responseBuf = 3;
   return msg;
 }
 
 char* setStatus(struct List* polls, char* region, unsigned int status) {
   struct Poll* poll = findPoll(polls, region);
-  char* msg = malloc(sizeof(char)*100);
+  char* msg = malloc(sizeof(char)*256);
 
   // should not be null
   if (poll == NULL) {
-    printf("Trying to insert into unknown poll\n");
     sprintf(msg, "NR;%s\0", region);
+		responseBuf = 18;
     return msg;
   }
 
   if (poll->status == status || (poll->status == 2 && status == 0)) {
-    printf("Trying to set status to same status\n");
     sprintf(msg, "PF;%s:%s\0", region, status == 0 ? "Closed" : "Open");
+		responseBuf = 23;
     return msg;
   }
 
   if (poll->status > 1) {
-    printf("Trying to reopen poll\n");
     sprintf(msg, "RR;%s\0", region);
+		responseBuf = 18;
     return msg;
   }
 
@@ -306,7 +252,6 @@ char* setStatus(struct List* polls, char* region, unsigned int status) {
     poll->status = status;
   }
 
-  // printf("change status: poll: %s, status: %i\n", poll->name, poll->status);
   pthread_mutex_unlock(poll->lock);
 
   // recursively set status of all children
@@ -319,32 +264,40 @@ char* setStatus(struct List* polls, char* region, unsigned int status) {
   }
 
   sprintf(msg, "SC;\0");
+	responseBuf = 3;
   return msg;
 }
 
 char* findWinner(struct List* polls) {
-  char* msg = malloc(sizeof(char)*100);
+  char* msg = malloc(sizeof(char)*256);
   char* winnerName;
   int winnerCount = 0;
+	bool winner = false;
 
   for (struct List* n = polls->next; n != NULL; n = n->next) {
     struct Poll* p = (struct Poll*)n->value;
 
     if (p->status == 1) {
-      printf("Trying to find winner in open poll\n");
       sprintf(msg, "RO;%s\0", p->name);
+			responseBuf = 18;
       return msg;
     }
 
     for (struct Map* c = p->candidates->next; c != NULL; c = c->next) {
       if (((int)c->value) > winnerCount) {
+				winner = true;
         winnerName = c->key;
         winnerCount = (int)c->value;
       }
     }
   }
 
-  sprintf(msg, "SC;Winner:%s\0", winnerName);
+	if(winner) {
+		sprintf(msg, "SC;Winner:%s\0", winnerName);
+	} else {
+		sprintf(msg, "SC:Winner:No winner\0");
+	}
+	responseBuf = 110;
   return msg;
 }
 
@@ -352,26 +305,27 @@ char* countVotes(struct List* polls, char* region) {
   struct Poll* poll = findPoll(polls, region);
 
   // assume max string length
-  char* msg = malloc(sizeof(char)*100);
+  char* msg = malloc(sizeof(char)*256);
   strcpy(msg, "");
 
   // should not be null
   if (poll == NULL) {
-    printf("Trying to insert count votes of unknown poll\n");
     sprintf(msg, "NR;%s\0", region);
+		responseBuf = 18;
     return msg;
   }
 
   if (poll->candidates->next == NULL) {
     // send no votes msg
     sprintf(msg, "SC;No votes.\0");
+		responseBuf = 12;
     return msg;
   } else {
     strcat(msg, "SC;");
   }
-
+	responseBuf = 256;
   for (struct Map* c = poll->candidates->next; c != NULL; c = c->next) {
-    char* info = malloc(sizeof(char)*10);
+    char* info = malloc(sizeof(char)*15);
 
     sprintf(info, "%s:%i", c->key, (int)c->value);
 
@@ -392,13 +346,13 @@ char* addRegion(struct List* polls, char* parentName, char* newRegion) {
   struct Poll* parent = findPoll(polls, parentName);
 
   // assume max string length
-  char* msg = malloc(sizeof(char)*100);
+  char* msg = malloc(sizeof(char)*256);
   strcpy(msg, "");
 
   // should not be null
   if (parent == NULL) {
-    printf("Trying to add region to non-existent parent\n");
     sprintf(msg, "NR;%s\0", parent);
+		responseBuf = 18;
     return msg;
   }
 
@@ -442,17 +396,17 @@ unsigned int isLeaf(struct List* polls, char* region) {
 void handleRequest(struct ThreadArgs* args) {
   // Buffer for data.
   // assumed max buffer length
-  int bufLength = 3000;
-  char* buffer = malloc(sizeof(char)*bufLength);
+  int bufferLength = 256;
+  char* buffer = malloc(sizeof(char)*bufferLength);
 
-  int readSize = recv(args->socket, (void*)buffer, bufLength, 0);
+  int readSize = recv(args->socket, (void*)buffer, bufferLength, 0);
   printf(
-    "Request received from client at %s:%i\n",
+    "Request received from client at %s:%i,%s\n",
     inet_ntoa(args->clientAddress->sin_addr),
-    (int)ntohs(args->clientAddress->sin_port));
-  printf("size: %i, message: %s\n", readSize, buffer);
+    (int)ntohs(args->clientAddress->sin_port),
+		buffer);
 
-  char** msgStrings = malloc(sizeof(char)*bufLength);
+  char** msgStrings = malloc(sizeof(char)*bufferLength);
   int numTokens = makeargv(buffer, ";", &msgStrings);
 
   // trim whitespace
@@ -462,11 +416,13 @@ void handleRequest(struct ThreadArgs* args) {
 
   // handle request by type
   char* responseData;
+	//ssize_t responseBuf = 0;
 
   if (strcmp(msgStrings[0], "AV") == 0) {
     if (isLeaf(args->polls, msgStrings[1]) != 0) {
       responseData = malloc(sizeof(char)*3 + sizeof(char)*strlen(msgStrings[1]));
       sprintf(responseData, "NL;%s\0", msgStrings[1]);
+			responseBuf = 18;
     } else {
       responseData = addVotes(args->polls, msgStrings[1], msgStrings[2]);
     }
@@ -474,6 +430,7 @@ void handleRequest(struct ThreadArgs* args) {
     if (isLeaf(args->polls, msgStrings[1]) != 0) {
       responseData = malloc(sizeof(char)*3 + sizeof(char)*strlen(msgStrings[1]));
       sprintf(responseData, "NL;%s\0", msgStrings[1]);
+			responseBuf = 18;
     } else {
       responseData = removeVotes(args->polls, msgStrings[1], msgStrings[2]);
     }
@@ -490,19 +447,31 @@ void handleRequest(struct ThreadArgs* args) {
     responseData = addRegion(args->polls, msgStrings[1], msgStrings[2]);
     pthread_mutex_unlock(args->masterLock);
   } else {
-    responseData = malloc(sizeof(char)*6);
+    responseData = malloc(sizeof(char)*256);
     sprintf(responseData, "UC;%s\0", msgStrings[0]);
+		responseBuf = 256;
   }
 
   // send responseData
   printf(
-    "Sending response to client at %s:%i\n",
+    "Sending response to client at %s:%i,%s\n",
     inet_ntoa(args->clientAddress->sin_addr),
-    (int)ntohs(args->clientAddress->sin_port));
+    (int)ntohs(args->clientAddress->sin_port),
+		responseData);
 
-  printf("response: %s\n", responseData);
-  write(args->socket, responseData, strlen(responseData));
-
+	/*if (success) {
+		write(args->socket, responseData, sizeof(responseData));
+		success = false;
+	} else if (illegal_sub){
+		write(args->socket, responseData, 103);
+		illegal_sub = false;
+	} else if (rc){
+		write(args->socket, responseData, 15);
+		rc = false;
+	} else {
+		write(args->socket, responseData, strlen(responseData));
+	}*/
+	write(args->socket, responseData, responseBuf);
   close(args->socket);
   printf(
     "Closed connection with client at %s:%i\n",
@@ -532,8 +501,7 @@ int main(int argc, char** argv) {
 
   // Create a TCP socket.
   int sock = socket(AF_INET , SOCK_STREAM , 0);
-
-  if (setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, &(int){ 1 }, sizeof(int)) < 0) {
+  if (setsockopt(sock/*sockfd*/, SOL_SOCKET, SO_REUSEADDR, &(int){ 1 }, sizeof(int)) < 0) {
     perror("setsockopt(SO_REUSEADDR) failed");
   }
 
@@ -548,7 +516,7 @@ int main(int argc, char** argv) {
       perror("error connecting to socket");
       exit(1);
   } else {
-    printf("server listening on %s\n", argv[2]);
+    printf("Server listening on port %s\n", argv[2]);
   }
 
 
