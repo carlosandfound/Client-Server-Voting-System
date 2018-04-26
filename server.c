@@ -33,6 +33,7 @@ struct ThreadArgs {
   struct List* polls;
   int socket;
   struct sockaddr_in* clientAddress;
+  pthread_mutex_t* masterLock;
 };
 
 struct Poll* createPoll(char* name) {
@@ -416,6 +417,9 @@ char* addRegion(struct List* polls, char* parentName, char* newRegion) {
   pthread_mutex_lock(parent->lock);
   addNode(parent->children, pn);
   pthread_mutex_unlock(parent->lock);
+
+  sprintf(msg, "SC;\0");
+  return msg;
 }
 
 unsigned int isLeaf(struct List* polls, char* region) {
@@ -482,7 +486,9 @@ void handleRequest(struct ThreadArgs* args) {
   } else if (strcmp(msgStrings[0], "CV") == 0) {
     responseData = countVotes(args->polls, msgStrings[1]);
   } else if (strcmp(msgStrings[0], "AR") == 0) {
+    pthread_mutex_lock(args->masterLock);
     responseData = addRegion(args->polls, msgStrings[1], msgStrings[2]);
+    pthread_mutex_unlock(args->masterLock);
   } else {
     responseData = malloc(sizeof(char)*6);
     sprintf(responseData, "UC;%s\0", msgStrings[0]);
@@ -513,26 +519,29 @@ void handleRequest(struct ThreadArgs* args) {
 
 int main(int argc, char** argv) {
   if (argc != NUM_ARGS + 1) {
-		printf("Wrong number of args, expected %d, given %d\n", NUM_ARGS, argc - 1);
-		exit(1);
-	}
+    printf("Wrong number of args, expected %d, given %d\n", NUM_ARGS, argc - 1);
+    exit(1);
+  }
 
   // read in DAG
   struct List* polls = createList();
   readDag(argv[1], polls);
 
+  pthread_mutex_t* pollLock = malloc(sizeof(pthread_mutex_t));
+  pthread_mutex_init(pollLock, NULL);
+
   // Create a TCP socket.
   int sock = socket(AF_INET , SOCK_STREAM , 0);
-	
-  if (setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &(int){ 1 }, sizeof(int)) < 0) {
+
+  if (setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, &(int){ 1 }, sizeof(int)) < 0) {
     perror("setsockopt(SO_REUSEADDR) failed");
   }
 
-	// Bind it to a local address.
-	struct sockaddr_in servAddress;
-	servAddress.sin_family = AF_INET;
-	servAddress.sin_port = htons(atoi(argv[2]));
-	servAddress.sin_addr.s_addr = htonl(INADDR_ANY);
+  // Bind it to a local address.
+  struct sockaddr_in servAddress;
+  servAddress.sin_family = AF_INET;
+  servAddress.sin_port = htons(atoi(argv[2]));
+  servAddress.sin_addr.s_addr = htonl(INADDR_ANY);
 
   if (bind(sock, (struct sockaddr *) &servAddress, sizeof(servAddress)) != 0 ||
     listen(sock, MAX_CONNECTIONS) != 0) {
@@ -545,9 +554,9 @@ int main(int argc, char** argv) {
 
   while (1) {
     // Now accept the incoming connections.
-		struct sockaddr_in* clientAddress = malloc(sizeof(struct sockaddr_in));
+    struct sockaddr_in* clientAddress = malloc(sizeof(struct sockaddr_in));
 
-		socklen_t size = sizeof(struct sockaddr_in);
+    socklen_t size = sizeof(struct sockaddr_in);
 
     pthread_t t;
     struct ThreadArgs* args = malloc(sizeof(struct ThreadArgs));
@@ -555,6 +564,7 @@ int main(int argc, char** argv) {
     args->polls = polls;
     args->socket = accept(sock, (struct sockaddr*)clientAddress, &size);
     args->clientAddress = clientAddress;
+    args->masterLock = pollLock;
 
     // spawn thread to handle request
     if (args->socket > - 1) {
@@ -569,6 +579,7 @@ int main(int argc, char** argv) {
   }
 
   // clean up
+  // NOTE cute, this will never run unless given proper signal
   close(sock);
 
   for (struct List* n = polls->next; n != NULL; n = n->next) {
