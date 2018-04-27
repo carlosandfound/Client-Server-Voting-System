@@ -1,3 +1,11 @@
+/*
+Names: Carlos Alvarenga, Jeremy Herzog
+X500’s: alvar357, herzo175
+id's: 5197501, 5142295
+Lecture Section: Both students are in lecture section 16
+Extra Credit: YES
+*/
+
 #define _BSD_SOURCE
 #define NUM_ARGS 4
 
@@ -17,27 +25,9 @@
 #include "utils.h"
 #include "map.h"
 
-/*
-alias co1="./client PA4_Care_Pkg/TestCases/TestCase01/input.req 127.0.0.1 7501"
-alias co2="./client PA4_Care_Pkg/TestCases/TestCase02/input.req 127.0.0.1 7501"
-alias co3="./client PA4_Care_Pkg/TestCases/TestCase03/input.req 127.0.0.1 7501"
-
-alias c1="./client2 PA4_Care_Pkg/TestCases/TestCase01/input.req 127.0.0.1 7501"
-alias c2="./client2 PA4_Care_Pkg/TestCases/TestCase02/input.req 127.0.0.1 7501"
-alias c3="./client2 PA4_Care_Pkg/TestCases/TestCase03/input.req 127.0.0.1 7501"
-
-alias so1="./server PA4_Care_Pkg/TestCases/TestCase01/voting_regions.dag 7501"
-alias so2="./server PA4_Care_Pkg/TestCases/TestCase02/voting_regions.dag 7501"
-alias so3="./server PA4_Care_Pkg/TestCases/TestCase03/voting_regions.dag 7501"
-
-alias s1="./server2 PA4_Care_Pkg/TestCases/TestCase01/voting_regions.dag 7501"
-alias s2="./server2 PA4_Care_Pkg/TestCases/TestCase02/voting_regions.dag 7501"
-alias s3="./server2 PA4_Care_Pkg/TestCases/TestCase03/voting_regions.dag 7501"
-*/
-
+// count the nmber of candidates at the specified file
 char* count_candidates(char* fpath) {
   if (!isFilePopulated(fpath)) {
-    printf("Error: File '%s' doesn't exist\n", fpath);
     exit(1);
   } else {
     FILE* file = fopen(fpath, "r");
@@ -83,6 +73,7 @@ char* count_candidates(char* fpath) {
   }
 }
 
+// build request string that will be sent out to the server
 void createRequest(char* line, char* request) {
   char** splitLine = malloc(sizeof(char)*strlen(line));
   int numTokens = makeargv(line, " ", &splitLine);
@@ -116,6 +107,7 @@ void createRequest(char* line, char* request) {
   }
 }
 
+// send request to server and then read back response
 void sendRequest(char* ip, int port, char* request) {
   // connect to server
   int sock = socket(AF_INET , SOCK_STREAM , 0);
@@ -127,13 +119,13 @@ void sendRequest(char* ip, int port, char* request) {
 
   if (connect(sock, (struct sockaddr*)&address, sizeof(address)) == 0) {
     printf("Initiated connection with server at %s:%d\n", ip, port);
-    // send(sock, (void*)request, strlen(request), 0);
+
     printf("Sending request to server: %s\n", request);
     write(sock, (void*)request, strlen(request)+1);
 
     // print response from server
-    char* response = malloc(sizeof(char)*1024); // assumed max response size of 1024
-    read(sock, response, 1024);
+    char* response = malloc(sizeof(char)*256); // assumed max response size of 1024
+    read(sock, response, 256);
 
     printf("Recieved response from server: %s\n", response);
   } else {
@@ -146,14 +138,13 @@ void sendRequest(char* ip, int port, char* request) {
 
 int main(int argc, char** argv) {
 
-	if (argc != 4) {
+	if (argc != NUM_ARGS) {
     // req file, server ip, server port
 		printf("Wrong number of args, expected %d, given %d\n", 4, argc - 1);
 		exit(1);
 	} else {
     // read file
     if (!isFilePopulated(argv[1])) {
-      printf("Error: Input req file doesn't exist or is empty\n");
       exit(1);
     }
 
@@ -190,9 +181,7 @@ int main(int argc, char** argv) {
       char* req = malloc(sizeof(char)*256);
       createRequest(line, req);
 
-      //if (err != 1) {
-        sendRequest(argv[2], atoi(argv[3]), req);
-      //}
+      sendRequest(argv[2], atoi(argv[3]), req);
 
       free(req);
     }
