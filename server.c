@@ -1,3 +1,11 @@
+/*
+Names: Carlos Alvarenga, Jeremy Herzog
+X500’s: alvar357, herzo175
+id's: 5197501, 5142295
+Lecture Section: Both students are in lecture section 16
+Extra Credit: YES
+*/
+
 #define _BSD_SOURCE
 #define NUM_ARGS 2
 
@@ -20,6 +28,7 @@
 
 #define MAX_CONNECTIONS 100
 
+// kep track of buffer space for response message
 ssize_t responseBuf = 0;
 
 struct Poll {
@@ -53,6 +62,7 @@ struct Poll* createPoll(char* name) {
   return p;
 }
 
+// find specfic poll region in the tree
 struct Poll* findPoll(struct List* polls, char* name) {
   struct List* n = polls->next;
 
@@ -67,6 +77,7 @@ struct Poll* findPoll(struct List* polls, char* name) {
   return NULL;
 }
 
+// read the dag file and create poll regions with candidates
 void readDag(char* dagPath, struct List* polls) {
   FILE* dagFile = fopen(dagPath, "r");
 
@@ -116,12 +127,13 @@ void readDag(char* dagPath, struct List* polls) {
   fclose(dagFile);
 }
 
+// Add votes of region to respective poll
 char* addVotes(struct List* polls, char* region, char* votes) {
 
   // should not be null
   struct Poll* poll = findPoll(polls, region);
 
-  // assumed max response size of 100
+  // assumed max response size of 256
   char* msg = malloc(sizeof(char)*256);
 
   if (poll == NULL) {
@@ -167,6 +179,7 @@ char* addVotes(struct List* polls, char* region, char* votes) {
   return msg;
 }
 
+// remove votes from region's respective poll
 char* removeVotes(struct List* polls, char* region, char* votes) {
   // should not be null
   struct Poll* poll = findPoll(polls, region);
@@ -220,11 +233,12 @@ char* removeVotes(struct List* polls, char* region, char* votes) {
   return msg;
 }
 
+// function thats closes/opens region poll
 char* setStatus(struct List* polls, char* region, unsigned int status) {
   struct Poll* poll = findPoll(polls, region);
   char* msg = malloc(sizeof(char)*256);
 
-  // should not be null
+  // should not be null unless region doesn't exist
   if (poll == NULL) {
     sprintf(msg, "NR;%s\0", region);
 		responseBuf = 18;
@@ -268,6 +282,7 @@ char* setStatus(struct List* polls, char* region, unsigned int status) {
   return msg;
 }
 
+// find the winner of the election
 char* findWinner(struct List* polls) {
   char* msg = malloc(sizeof(char)*256);
   char* winnerName;
@@ -277,6 +292,7 @@ char* findWinner(struct List* polls) {
   for (struct List* n = polls->next; n != NULL; n = n->next) {
     struct Poll* p = (struct Poll*)n->value;
 
+    // trying to find a winner when a poll is still open
     if (p->status == 1) {
       sprintf(msg, "RO;%s\0", p->name);
 			responseBuf = 18;
@@ -301,6 +317,7 @@ char* findWinner(struct List* polls) {
   return msg;
 }
 
+// count the votes at a specific poll in region
 char* countVotes(struct List* polls, char* region) {
   struct Poll* poll = findPoll(polls, region);
 
@@ -342,6 +359,7 @@ char* countVotes(struct List* polls, char* region) {
   return msg;
 }
 
+// extra credit add region request handling
 char* addRegion(struct List* polls, char* parentName, char* newRegion) {
   struct Poll* parent = findPoll(polls, parentName);
 
@@ -393,6 +411,8 @@ unsigned int isLeaf(struct List* polls, char* region) {
   return 0;
 }
 
+// get request from client and call appropriate function to handle request
+// send back response in the end
 void handleRequest(struct ThreadArgs* args) {
   // Buffer for data.
   // assumed max buffer length
@@ -416,7 +436,6 @@ void handleRequest(struct ThreadArgs* args) {
 
   // handle request by type
   char* responseData;
-	//ssize_t responseBuf = 0;
 
   if (strcmp(msgStrings[0], "AV") == 0) {
     if (isLeaf(args->polls, msgStrings[1]) != 0) {
@@ -452,25 +471,13 @@ void handleRequest(struct ThreadArgs* args) {
 		responseBuf = 256;
   }
 
-  // send responseData
+  // send back response data
   printf(
     "Sending response to client at %s:%i,%s\n",
     inet_ntoa(args->clientAddress->sin_addr),
     (int)ntohs(args->clientAddress->sin_port),
 		responseData);
 
-	/*if (success) {
-		write(args->socket, responseData, sizeof(responseData));
-		success = false;
-	} else if (illegal_sub){
-		write(args->socket, responseData, 103);
-		illegal_sub = false;
-	} else if (rc){
-		write(args->socket, responseData, 15);
-		rc = false;
-	} else {
-		write(args->socket, responseData, strlen(responseData));
-	}*/
 	write(args->socket, responseData, responseBuf);
   close(args->socket);
   printf(
@@ -490,77 +497,78 @@ int main(int argc, char** argv) {
   if (argc != NUM_ARGS + 1) {
     printf("Wrong number of args, expected %d, given %d\n", NUM_ARGS, argc - 1);
     exit(1);
-  }
-
-  // read in DAG
-  struct List* polls = createList();
-  readDag(argv[1], polls);
-
-  pthread_mutex_t* pollLock = malloc(sizeof(pthread_mutex_t));
-  pthread_mutex_init(pollLock, NULL);
-
-  // Create a TCP socket.
-  int sock = socket(AF_INET , SOCK_STREAM , 0);
-  if (setsockopt(sock/*sockfd*/, SOL_SOCKET, SO_REUSEADDR, &(int){ 1 }, sizeof(int)) < 0) {
-    perror("setsockopt(SO_REUSEADDR) failed");
-  }
-
-  // Bind it to a local address.
-  struct sockaddr_in servAddress;
-  servAddress.sin_family = AF_INET;
-  servAddress.sin_port = htons(atoi(argv[2]));
-  servAddress.sin_addr.s_addr = htonl(INADDR_ANY);
-
-  if (bind(sock, (struct sockaddr *) &servAddress, sizeof(servAddress)) != 0 ||
-    listen(sock, MAX_CONNECTIONS) != 0) {
-      perror("error connecting to socket");
-      exit(1);
+  } else if (!isFilePopulated(argv[1])) {
+    exit(1);
   } else {
-    printf("Server listening on port %s\n", argv[2]);
-  }
+    // read in DAG
+    struct List* polls = createList();
+    readDag(argv[1], polls);
 
+    pthread_mutex_t* pollLock = malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(pollLock, NULL);
 
-  while (1) {
-    // Now accept the incoming connections.
-    struct sockaddr_in* clientAddress = malloc(sizeof(struct sockaddr_in));
-
-    socklen_t size = sizeof(struct sockaddr_in);
-
-    pthread_t t;
-    struct ThreadArgs* args = malloc(sizeof(struct ThreadArgs));
-
-    args->polls = polls;
-    args->socket = accept(sock, (struct sockaddr*)clientAddress, &size);
-    args->clientAddress = clientAddress;
-    args->masterLock = pollLock;
-
-    // spawn thread to handle request
-    if (args->socket > - 1) {
-      printf(
-        "Connection initiated from client at %s:%i\n",
-        inet_ntoa(args->clientAddress->sin_addr),
-        (int)ntohs(args->clientAddress->sin_port));
-
-      pthread_create(&t, NULL, handleRequest, args);
-      pthread_detach(&t);
+    // Create a TCP socket.
+    int sock = socket(AF_INET , SOCK_STREAM , 0);
+    if (setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, &(int){ 1 }, sizeof(int)) < 0) {
+      perror("setsockopt(SO_REUSEADDR) failed");
     }
+
+    // Bind it to a local address.
+    struct sockaddr_in servAddress;
+    servAddress.sin_family = AF_INET;
+    servAddress.sin_port = htons(atoi(argv[2]));
+    servAddress.sin_addr.s_addr = htonl(INADDR_ANY);
+
+    if (bind(sock, (struct sockaddr *) &servAddress, sizeof(servAddress)) != 0 ||
+      listen(sock, MAX_CONNECTIONS) != 0) {
+        perror("error connecting to socket");
+        exit(1);
+    } else {
+      printf("Server listening on port %s\n", argv[2]);
+    }
+
+
+    while (1) {
+      // Now accept the incoming connections.
+      struct sockaddr_in* clientAddress = malloc(sizeof(struct sockaddr_in));
+
+      socklen_t size = sizeof(struct sockaddr_in);
+
+      pthread_t t;
+      struct ThreadArgs* args = malloc(sizeof(struct ThreadArgs));
+
+      args->polls = polls;
+      args->socket = accept(sock, (struct sockaddr*)clientAddress, &size);
+      args->clientAddress = clientAddress;
+      args->masterLock = pollLock;
+
+      // spawn thread to handle request
+      if (args->socket > - 1) {
+        printf(
+          "Connection initiated from client at %s:%i\n",
+          inet_ntoa(args->clientAddress->sin_addr),
+          (int)ntohs(args->clientAddress->sin_port));
+
+        pthread_create(&t, NULL, handleRequest, args);
+        pthread_detach(&t);
+      }
+    }
+
+    // clean up
+    close(sock);
+
+    for (struct List* n = polls->next; n != NULL; n = n->next) {
+      // free poll
+      struct Poll* p = (struct Poll*)n->value;
+
+      free(p->name);
+      free(p->children);
+      free(p->candidates);
+      free(p->lock);
+
+      free(p);
+    }
+
+    free(polls);
   }
-
-  // clean up
-  // NOTE cute, this will never run unless given proper signal
-  close(sock);
-
-  for (struct List* n = polls->next; n != NULL; n = n->next) {
-    // free poll
-    struct Poll* p = (struct Poll*)n->value;
-
-    free(p->name);
-    free(p->children);
-    free(p->candidates);
-    free(p->lock);
-
-    free(p);
-  }
-
-  free(polls);
 }
