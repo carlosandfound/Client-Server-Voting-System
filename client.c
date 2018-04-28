@@ -113,9 +113,9 @@ void sendRequest(char* ip, int port, char* request) {
   int sock = socket(AF_INET , SOCK_STREAM , 0);
 
   struct sockaddr_in address;
-	address.sin_family = AF_INET;
-	address.sin_port = htons(port);
-	address.sin_addr.s_addr = inet_addr(ip);
+  address.sin_family = AF_INET;
+  address.sin_port = htons(port);
+  address.sin_addr.s_addr = inet_addr(ip);
 
   if (connect(sock, (struct sockaddr*)&address, sizeof(address)) == 0) {
     printf("Initiated connection with server at %s:%d\n", ip, port);
@@ -138,11 +138,11 @@ void sendRequest(char* ip, int port, char* request) {
 
 int main(int argc, char** argv) {
 
-	if (argc != NUM_ARGS) {
+  if (argc != NUM_ARGS) {
     // req file, server ip, server port
-		printf("Wrong number of args, expected %d, given %d\n", 4, argc - 1);
-		exit(1);
-	} else {
+    printf("Wrong number of args, expected %d, given %d\n", 4, argc - 1);
+    exit(1);
+  } else {
     // read file
     if (!isFilePopulated(argv[1])) {
       exit(1);

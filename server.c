@@ -138,13 +138,13 @@ char* addVotes(struct List* polls, char* region, char* votes) {
 
   if (poll == NULL) {
     sprintf(msg, "NR;%s\0", region);
-		responseBuf = 18;
+    responseBuf = 18;
     return msg;
   }
 
   if (poll->status != 1) {
     sprintf(msg, "RC;%s\0", region);
-		responseBuf = 18;
+    responseBuf = 18;
     return msg;
   }
 
@@ -175,7 +175,7 @@ char* addVotes(struct List* polls, char* region, char* votes) {
   free(splitData);
 
   sprintf(msg, "SC;\0");
-	responseBuf = 5;
+  responseBuf = 5;
   return msg;
 }
 
@@ -187,13 +187,13 @@ char* removeVotes(struct List* polls, char* region, char* votes) {
 
   if (poll == NULL) {
     sprintf(msg, "NR;%s\0", region);
-		responseBuf = 18;
+    responseBuf = 18;
     return msg;
   }
 
   if (poll->status != 1) {
     sprintf(msg, "RC;%s\0", region);
-		responseBuf = 18;
+    responseBuf = 18;
     return msg;
   }
 
@@ -207,14 +207,10 @@ char* removeVotes(struct List* polls, char* region, char* votes) {
     struct Map* candidate = findInMap(poll->candidates, splitCandidate[0]);
     int amount = atoi(splitCandidate[1]);
 
-    if (candidate == NULL) {
+    if (candidate == NULL || (int)candidate->value - amount < 0) {
       sprintf(msg, "IS;%s\0", splitCandidate[0]);
-			responseBuf = 103;
+      responseBuf = 103;
       return msg;
-    } else if ((int)candidate->value - amount < 1) {
-      pthread_mutex_lock(poll->lock);
-      insertIntoMap(poll->candidates, strdup(splitCandidate[0]), (void*)0);
-      pthread_mutex_unlock(poll->lock);
     } else {
       pthread_mutex_unlock(poll->lock);
       insertIntoMap(
@@ -229,7 +225,7 @@ char* removeVotes(struct List* polls, char* region, char* votes) {
   free(splitData);
 
   sprintf(msg, "SC;\0");
-	responseBuf = 3;
+  responseBuf = 3;
   return msg;
 }
 
@@ -241,19 +237,26 @@ char* setStatus(struct List* polls, char* region, unsigned int status) {
   // should not be null unless region doesn't exist
   if (poll == NULL) {
     sprintf(msg, "NR;%s\0", region);
-		responseBuf = 18;
+    responseBuf = 18;
     return msg;
   }
 
   if (poll->status == status || (poll->status == 2 && status == 0)) {
-    sprintf(msg, "PF;%s:%s\0", region, status == 0 ? "Closed" : "Open");
-		responseBuf = 23;
+    if (poll->status == 0) {
+      sprintf(msg, "PF;%s:%s\0", region, "Inital");
+    } else if (poll->status == 1) {
+      sprintf(msg, "PF;%s:%s\0", region, "Open");
+    } else {
+      sprintf(msg, "PF;%s:%s\0", region, "Closed");
+    }
+
+    responseBuf = 23;
     return msg;
   }
 
   if (poll->status > 1) {
     sprintf(msg, "RR;%s\0", region);
-		responseBuf = 18;
+    responseBuf = 18;
     return msg;
   }
 
@@ -272,13 +275,16 @@ char* setStatus(struct List* polls, char* region, unsigned int status) {
   for (struct List* c = poll->children->next; c != NULL; c = c->next) {
     msg = setStatus(polls, ((struct Poll*)(c->value))->name, status);
 
+    // NOTE: don't set status for child poll statuses being changed
+    /*
     if (strcmp(msg, "SC;\0") != 0) {
       return msg;
     }
+    */
   }
 
   sprintf(msg, "SC;\0");
-	responseBuf = 3;
+  responseBuf = 3;
   return msg;
 }
 
@@ -287,7 +293,7 @@ char* findWinner(struct List* polls) {
   char* msg = malloc(sizeof(char)*256);
   char* winnerName;
   int winnerCount = 0;
-	bool winner = false;
+  bool winner = false;
 
   for (struct List* n = polls->next; n != NULL; n = n->next) {
     struct Poll* p = (struct Poll*)n->value;
@@ -295,25 +301,31 @@ char* findWinner(struct List* polls) {
     // trying to find a winner when a poll is still open
     if (p->status == 1) {
       sprintf(msg, "RO;%s\0", p->name);
-			responseBuf = 18;
+      responseBuf = 18;
+      return msg;
+    }
+
+    if (p->status == 0) {
+      sprintf(msg, "UE;\0");
+      responseBuf = 18;
       return msg;
     }
 
     for (struct Map* c = p->candidates->next; c != NULL; c = c->next) {
       if (((int)c->value) > winnerCount) {
-				winner = true;
+        winner = true;
         winnerName = c->key;
         winnerCount = (int)c->value;
       }
     }
   }
 
-	if(winner) {
-		sprintf(msg, "SC;Winner:%s\0", winnerName);
-	} else {
-		sprintf(msg, "SC:Winner:No winner\0");
-	}
-	responseBuf = 110;
+  if(winner) {
+    sprintf(msg, "SC;Winner:%s\0", winnerName);
+  } else {
+    sprintf(msg, "SC:Winner:No winner\0");
+  }
+  responseBuf = 110;
   return msg;
 }
 
@@ -328,19 +340,19 @@ char* countVotes(struct List* polls, char* region) {
   // should not be null
   if (poll == NULL) {
     sprintf(msg, "NR;%s\0", region);
-		responseBuf = 18;
+    responseBuf = 18;
     return msg;
   }
 
   if (poll->candidates->next == NULL) {
     // send no votes msg
     sprintf(msg, "SC;No votes.\0");
-		responseBuf = 12;
+    responseBuf = 12;
     return msg;
   } else {
     strcat(msg, "SC;");
   }
-	responseBuf = 256;
+  responseBuf = 256;
   for (struct Map* c = poll->candidates->next; c != NULL; c = c->next) {
     char* info = malloc(sizeof(char)*15);
 
@@ -370,7 +382,7 @@ char* addRegion(struct List* polls, char* parentName, char* newRegion) {
   // should not be null
   if (parent == NULL) {
     sprintf(msg, "NR;%s\0", parent);
-		responseBuf = 18;
+    responseBuf = 18;
     return msg;
   }
 
@@ -424,7 +436,7 @@ void handleRequest(struct ThreadArgs* args) {
     "Request received from client at %s:%i,%s\n",
     inet_ntoa(args->clientAddress->sin_addr),
     (int)ntohs(args->clientAddress->sin_port),
-		buffer);
+    buffer);
 
   char** msgStrings = malloc(sizeof(char)*bufferLength);
   int numTokens = makeargv(buffer, ";", &msgStrings);
@@ -441,7 +453,7 @@ void handleRequest(struct ThreadArgs* args) {
     if (isLeaf(args->polls, msgStrings[1]) != 0) {
       responseData = malloc(sizeof(char)*3 + sizeof(char)*strlen(msgStrings[1]));
       sprintf(responseData, "NL;%s\0", msgStrings[1]);
-			responseBuf = 18;
+      responseBuf = 18;
     } else {
       responseData = addVotes(args->polls, msgStrings[1], msgStrings[2]);
     }
@@ -449,7 +461,7 @@ void handleRequest(struct ThreadArgs* args) {
     if (isLeaf(args->polls, msgStrings[1]) != 0) {
       responseData = malloc(sizeof(char)*3 + sizeof(char)*strlen(msgStrings[1]));
       sprintf(responseData, "NL;%s\0", msgStrings[1]);
-			responseBuf = 18;
+      responseBuf = 18;
     } else {
       responseData = removeVotes(args->polls, msgStrings[1], msgStrings[2]);
     }
@@ -468,7 +480,7 @@ void handleRequest(struct ThreadArgs* args) {
   } else {
     responseData = malloc(sizeof(char)*256);
     sprintf(responseData, "UC;%s\0", msgStrings[0]);
-		responseBuf = 256;
+    responseBuf = 256;
   }
 
   // send back response data
@@ -476,9 +488,9 @@ void handleRequest(struct ThreadArgs* args) {
     "Sending response to client at %s:%i,%s\n",
     inet_ntoa(args->clientAddress->sin_addr),
     (int)ntohs(args->clientAddress->sin_port),
-		responseData);
+    responseData);
 
-	write(args->socket, responseData, responseBuf);
+  write(args->socket, responseData, responseBuf);
   close(args->socket);
   printf(
     "Closed connection with client at %s:%i\n",
