@@ -124,6 +124,27 @@ void readDag(char* dagPath, struct List* polls) {
     free(pollNames);
   }
 
+  // (for debugging)
+  // verify polls
+  // all polls
+  /*
+  for (struct List* n = polls->next; n != NULL; n = n->next) {
+    printf("name: %s\n", ((struct Poll*)(n->value))->name);
+  }
+
+  // polls and children
+  for (struct List* n = polls->next; n != NULL; n = n->next) {
+    struct Poll* parent = (struct Poll*)(n->value);
+    printf("parent: %s, children: ", parent->name);
+
+    for (struct List* c = parent->children->next; c != NULL; c = c->next) {
+      printf("%s ", ((struct Poll*)(c->value))->name);
+    }
+
+    printf("\n");
+  }
+  */
+
   fclose(dagFile);
 }
 
@@ -215,7 +236,7 @@ char* removeVotes(struct List* polls, char* region, char* votes) {
       pthread_mutex_unlock(poll->lock);
       insertIntoMap(
         poll->candidates,
-        strdup(splitCandidate[0]),
+        splitCandidate[0],
         (void*)((int)candidate->value) - amount);
       pthread_mutex_unlock(poll->lock);
     }
@@ -344,7 +365,25 @@ char* countVotes(struct List* polls, char* region) {
     return msg;
   }
 
-  if (poll->candidates->next == NULL) {
+  struct Map* candidates = createMap();
+
+  // count vote for parent node
+  for (struct Map* c = poll->candidates->next; c != NULL; c = c->next) {
+    struct Map* c2 = findInMap(candidates, c->key);
+
+    if (c2 == NULL) {
+      insertIntoMap(candidates, strdup(c->key), c->value);
+    } else {
+      insertIntoMap(candidates, c->key, (void*)((int)c2->value + (int)c->value));
+    }
+  }
+
+  // count votes for children
+  for (struct List* c = poll->children->next; c != NULL; c = c->next) {
+    countVotesChild((struct Poll*)c->value, candidates);
+  }
+
+  if (candidates->next == NULL) {
     // send no votes msg
     sprintf(msg, "SC;No votes.\0");
     responseBuf = 12;
@@ -352,8 +391,10 @@ char* countVotes(struct List* polls, char* region) {
   } else {
     strcat(msg, "SC;");
   }
+
   responseBuf = 256;
-  for (struct Map* c = poll->candidates->next; c != NULL; c = c->next) {
+
+  for (struct Map* c = candidates->next; c != NULL; c = c->next) {
     char* info = malloc(sizeof(char)*15);
 
     sprintf(info, "%s:%i", c->key, (int)c->value);
@@ -369,6 +410,24 @@ char* countVotes(struct List* polls, char* region) {
 
   strcat(msg, "\0");
   return msg;
+}
+
+void countVotesChild(struct Poll* poll, struct Map* candidates) {
+  // NOTE: not thread safe but only one thread should run per candidates struct
+  for (struct Map* c = poll->candidates->next; c != NULL; c = c->next) {
+    struct Map* c2 = findInMap(candidates, c->key);
+
+    if (c2 == NULL) {
+      insertIntoMap(candidates, strdup(c->key), c->value);
+    } else {
+      insertIntoMap(candidates, c->key, (int)c2->value + (int)c->value);
+    }
+  }
+
+  // recurse through children
+  for (struct List* c = poll->children->next; c != NULL; c = c->next) {
+    countVotesChild((struct Poll*)c->value, candidates);
+  }
 }
 
 // extra credit add region request handling
