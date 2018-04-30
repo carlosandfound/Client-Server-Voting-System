@@ -366,8 +366,11 @@ char* countVotes(struct List* polls, char* region) {
   }
 
   struct Map* candidates = createMap();
+  
+  countVotesR(poll, candidates);
 
   // count vote for parent node
+  /*
   for (struct Map* c = poll->candidates->next; c != NULL; c = c->next) {
     struct Map* c2 = findInMap(candidates, c->key);
 
@@ -380,8 +383,9 @@ char* countVotes(struct List* polls, char* region) {
 
   // count votes for children
   for (struct List* c = poll->children->next; c != NULL; c = c->next) {
-    countVotesChild((struct Poll*)c->value, candidates);
+    countVotesR((struct Poll*)c->value, candidates);
   }
+  */
 
   if (candidates->next == NULL) {
     // send no votes msg
@@ -412,7 +416,7 @@ char* countVotes(struct List* polls, char* region) {
   return msg;
 }
 
-void countVotesChild(struct Poll* poll, struct Map* candidates) {
+void countVotesR(struct Poll* poll, struct Map* candidates) {
   // NOTE: not thread safe but only one thread should run per candidates struct
   for (struct Map* c = poll->candidates->next; c != NULL; c = c->next) {
     struct Map* c2 = findInMap(candidates, c->key);
