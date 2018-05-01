@@ -366,7 +366,7 @@ char* countVotes(struct List* polls, char* region) {
   }
 
   struct Map* candidates = createMap();
-  
+
   countVotesR(poll, candidates);
 
   // count vote for parent node
@@ -430,7 +430,7 @@ void countVotesR(struct Poll* poll, struct Map* candidates) {
 
   // recurse through children
   for (struct List* c = poll->children->next; c != NULL; c = c->next) {
-    countVotesChild((struct Poll*)c->value, candidates);
+    countVotesR((struct Poll*)c->value, candidates);
   }
 }
 

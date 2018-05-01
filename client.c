@@ -136,6 +136,22 @@ void sendRequest(char* ip, int port, char* request) {
   close(sock);
 }
 
+struct threadArgs {
+  char* ip;
+  char* port;
+  char* line;
+};
+
+void handleRequest(struct threadArgs* args) {
+  // max msg size assumed to be 256
+  char* req = malloc(sizeof(char)*256);
+  createRequest(args->line, req);
+
+  sendRequest(args->ip, atoi(args->port), req);
+
+  free(req);
+}
+
 int main(int argc, char** argv) {
 
   if (argc != NUM_ARGS) {
@@ -177,7 +193,20 @@ int main(int argc, char** argv) {
         line[read - 1] = '\0';
       }
 
-      // max msg size assumed to be 1024
+      // multithreaded client
+      /*
+      pthread_t t;
+      struct threadArgs* a = malloc(sizeof(struct threadArgs));
+      a->ip = argv[2];
+      a->port = argv[3];
+      a->line = strdup(line);
+
+      pthread_create(&t, NULL, handleRequest, a);
+      pthread_detach(&t);
+      */
+
+      // single threaded client
+      // max msg size assumed to be 256
       char* req = malloc(sizeof(char)*256);
       createRequest(line, req);
 
