@@ -1,0 +1,122 @@
+Initiated connection with server at 127.0.0.1:8002
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:1,A:1
+Received response from server: SC (null)
+Closed connection with server at 127.0.0.1:8002

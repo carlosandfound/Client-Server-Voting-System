@@ -1,0 +1,7 @@
+REQ:  'CP;Survey         ;\x00'
+RESP: 'SC;\x00'
+REQ:  'CV;Survey         ;\x00'
+RESP: 'SC;SPL:60,Javscript:60,Assembly:60,C:365,Fortran:99,Java:158,Cobol:40,Ruby:59,Butterflies:126,C++:252\x00'
+REQ:  'RW;;\x00'
+RESP: 'SC;Winner:C\x00'
+Client closed connection.

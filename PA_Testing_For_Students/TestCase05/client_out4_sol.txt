@@ -1,0 +1,8 @@
+Initiated connection with server at 127.0.0.1:8004
+Sending request to server: CP Who_Won (null)
+Received response from server: SC (null)
+Sending request to server: CV Who_Won (null)
+Received response from server: SC D:30,A:120,B:30,C:30,E:30
+Sending request to server: RW (null) (null)
+Received response from server: SC Winner:A
+Closed connection with server at 127.0.0.1:8004

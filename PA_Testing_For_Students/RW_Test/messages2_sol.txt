@@ -1,0 +1,7 @@
+REQ:  'OP;Who_Won        ;\x00'
+RESP: 'SC;\x00'
+REQ:  'CP;Who_Won        ;\x00'
+RESP: 'SC;\x00'
+REQ:  'RW;;\x00'
+RESP: 'SC;No votes.\x00'
+Client closed connection.

@@ -1,0 +1,18 @@
+Script started on Fri 04 May 2018 07:48:23 AM CDT
+Server listening on port 9000
+Connection initated from client at 127.0.0.1:38390
+Request received from client at 127.0.0.1:38390, RW (null) (null) 
+Sending response to client at 127.0.0.1:38390, RC Who_Won
+Request received from client at 127.0.0.1:38390, OP Who_Won (null) 
+Sending response to client at 127.0.0.1:38390, SC (null)
+Request received from client at 127.0.0.1:38390, RW (null) (null) 
+Sending response to client at 127.0.0.1:38390, RO Who_Won
+Request received from client at 127.0.0.1:38390, AV Town_1 C:1,B:2,A:3 
+Sending response to client at 127.0.0.1:38390, SC (null)
+Request received from client at 127.0.0.1:38390, RW (null) (null) 
+Sending response to client at 127.0.0.1:38390, RO Who_Won
+Request received from client at 127.0.0.1:38390, CP Who_Won (null) 
+Sending response to client at 127.0.0.1:38390, SC (null)
+Request received from client at 127.0.0.1:38390, RW (null) (null) 
+Sending response to client at 127.0.0.1:38390, SC Winner:A
+Closed connection with client at 127.0.0.1:38390

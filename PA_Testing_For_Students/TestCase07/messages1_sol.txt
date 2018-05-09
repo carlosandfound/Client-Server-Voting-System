@@ -1,0 +1,3 @@
+REQ:  'OP;Survey         ;\x00'
+RESP: 'SC;\x00'
+Client closed connection.

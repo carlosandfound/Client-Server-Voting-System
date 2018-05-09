@@ -1,0 +1,11 @@
+Open_Polls Survey
+Add_Votes Minneapolis Minneapolis.votes
+Add_Votes Richfield Richfield.votes
+Add_Votes Bloomington Bloomington.votes
+Add_Votes Edina Edina.votes
+Add_Votes StPaul StPaul.votes
+Remove_Votes Richfield Richfield_remove.votes
+Remove_Votes Bloomington Bloomington_remove.votes
+Count_Votes Survey
+Close_Polls Survey
+Return_Winner 

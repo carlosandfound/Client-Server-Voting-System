@@ -107,51 +107,6 @@ void createRequest(char* line, char* request) {
   }
 }
 
-// send request to server and then read back response
-void sendRequest(char* ip, int port, char* request) {
-  // connect to server
-  int sock = socket(AF_INET , SOCK_STREAM , 0);
-
-  struct sockaddr_in address;
-  address.sin_family = AF_INET;
-  address.sin_port = htons(port);
-  address.sin_addr.s_addr = inet_addr(ip);
-
-  if (connect(sock, (struct sockaddr*)&address, sizeof(address)) == 0) {
-    printf("Initiated connection with server at %s:%d\n", ip, port);
-
-    printf("Sending request to server: %s\n", request);
-    write(sock, (void*)request, strlen(request)+1);
-
-    // print response from server
-    char* response = malloc(sizeof(char)*256); // assumed max response size of 1024
-    read(sock, response, 256);
-
-    printf("Recieved response from server: %s\n", response);
-  } else {
-    perror("Connection failed!");
-  }
-
-  printf("Closed connection with server at %s:%d\n", ip, port);
-  close(sock);
-}
-
-struct threadArgs {
-  char* ip;
-  char* port;
-  char* line;
-};
-
-void handleRequest(struct threadArgs* args) {
-  // max msg size assumed to be 256
-  char* req = malloc(sizeof(char)*256);
-  createRequest(args->line, req);
-
-  sendRequest(args->ip, atoi(args->port), req);
-
-  free(req);
-}
-
 int main(int argc, char** argv) {
 
   if (argc != NUM_ARGS) {
@@ -164,55 +119,67 @@ int main(int argc, char** argv) {
       exit(1);
     }
 
-    // read input file and send requests
-    FILE* reqFile = fopen(argv[1], "r");
+    int sock = socket(AF_INET , SOCK_STREAM , 0);
+    char* ip = argv[2];
+    int port = atoi(argv[3]);
 
-    char* line = NULL;
-    size_t len = 0;
-    ssize_t read;
+    struct sockaddr_in address;
+    address.sin_family = AF_INET;
+    address.sin_port = htons(port);
+    address.sin_addr.s_addr = inet_addr(ip);
 
-    // change directory to that of input file
-    char** splitPath = malloc(sizeof(char)*strlen(argv[1]));
-    int pathTokens = makeargv(argv[1], "/", &splitPath);
-    char* inputPath = malloc(sizeof(char)*strlen(argv[1]));
-    strcpy(inputPath, "");
+    if (connect(sock, (struct sockaddr*)&address, sizeof(address)) == 0) {
+      printf("Initiated connection with server at %s:%d\n", ip, port);
 
-    for (int i = 0; i < pathTokens - 1; i++) {
-      strcat(inputPath, splitPath[i]);
-      strcat(inputPath, "/");
-    }
+      // translate each line of file and send translation to server
+      // read input file and send requests
+      FILE* reqFile = fopen(argv[1], "r");
 
-    chdir(inputPath);
-    free(splitPath);
-    free(inputPath);
+      // change directory to that of input file
+      char** splitPath = malloc(sizeof(char)*strlen(argv[1]));
+      int pathTokens = makeargv(argv[1], "/", &splitPath);
+      char* inputPath = malloc(sizeof(char)*strlen(argv[1]));
+      strcpy(inputPath, "");
 
-    // translate each line of file and send translation to server
-    while ((read = getline(&line, &len, reqFile)) != -1) {
-      // filter newlines
-      if (line[read - 1] == '\n') {
-        line[read - 1] = '\0';
+      for (int i = 0; i < pathTokens - 1; i++) {
+        strcat(inputPath, splitPath[i]);
+        strcat(inputPath, "/");
       }
 
-      // multithreaded client
-      /*
-      pthread_t t;
-      struct threadArgs* a = malloc(sizeof(struct threadArgs));
-      a->ip = argv[2];
-      a->port = argv[3];
-      a->line = strdup(line);
+      chdir(inputPath);
+      free(splitPath);
+      free(inputPath);
 
-      pthread_create(&t, NULL, handleRequest, a);
-      pthread_detach(&t);
-      */
+      char* line = NULL;
+      size_t n = 0;
+      ssize_t llen;
 
-      // single threaded client
-      // max msg size assumed to be 256
-      char* req = malloc(sizeof(char)*256);
-      createRequest(line, req);
+      while ((llen = getline(&line, &n, reqFile)) != -1) {
+        // filter newlines
+        if (line[llen - 1] == '\n') {
+          line[llen - 1] = '\0';
+        }
 
-      sendRequest(argv[2], atoi(argv[3]), req);
+        // max msg size assumed to be 256
+        char* req = malloc(sizeof(char)*256);
+        createRequest(line, req);
 
-      free(req);
+        printf("Sending request to server: %s\n", req);
+        write(sock, (void*)req, strlen(req)+1);
+
+        // print response from server
+        char* res = malloc(sizeof(char)*256); // assumed max response size of 1024
+        read(sock, res, 256);
+
+        printf("Recieved response from server: %s\n", res);
+
+        free(req);
+      }
+    } else {
+      perror("Connection failed!");
     }
+
+    printf("Closed connection with server at %s:%d\n", ip, port);
+    close(sock);
   }
 }

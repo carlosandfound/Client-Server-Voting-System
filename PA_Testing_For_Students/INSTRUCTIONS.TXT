@@ -1,0 +1,25 @@
+INSTRUCTION:
+
+Unzip your submission into a folder.
+
+Run:
+
+python prepare_individual.py <student_folder>
+python grade_individual.py <student_folder>
+
+To run a specfic test case, cd into that directory and run ./run.bash <PORT_NUMBER> 
+
+
+client_out.txt is the STDOUT and STDERR of your program.
+server_out.txt is the STD_OUT and STD_ERR of your program.
+messages.txt is the messages sent between your client and server. 
+
+There are versions of each with _sol appeneded which are the solutions.
+
+
+In your student folder, find GRADE.txt, which contains info about the Single-Client test cases and Command Specific test cases (as long as your messge format is correct). Extra credit and multi-client test cases should be listed as -1 to indicate that they are not checked. 
+
+
+messages_dump.txt in the student folder has the messages.txt from each test case in it. 
+
+You may get errors from the script, there's a wide variety of mistakes people made that are not all handled. It is not uncomon to have to rerun test cases.

@@ -1,0 +1,16 @@
+Initiated connection with server at 127.0.0.1:8011
+Sending request to server: RW (null) (null)
+Received response from server: RC Who_Won
+Sending request to server: OP Who_Won (null)
+Received response from server: SC (null)
+Sending request to server: RW (null) (null)
+Received response from server: RO Who_Won
+Sending request to server: AV Town_1 C:1,B:2,A:3
+Received response from server: SC (null)
+Sending request to server: RW (null) (null)
+Received response from server: RO Who_Won
+Sending request to server: CP Who_Won (null)
+Received response from server: SC (null)
+Sending request to server: RW (null) (null)
+Received response from server: SC Winner:A
+Closed connection with server at 127.0.0.1:8011

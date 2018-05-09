@@ -1,0 +1,22 @@
+Script started on Fri 04 May 2018 07:53:54 AM CDT
+Server listening on port 8000
+Connection initated from client at 127.0.0.1:50634
+Request received from client at 127.0.0.1:50634, OP Survey (null) 
+Sending response to client at 127.0.0.1:50634, SC (null)
+Request received from client at 127.0.0.1:50634, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:50634, SC (null)
+Request received from client at 127.0.0.1:50634, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:50634, SC (null)
+Request received from client at 127.0.0.1:50634, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:50634, SC (null)
+Request received from client at 127.0.0.1:50634, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:50634, SC (null)
+Request received from client at 127.0.0.1:50634, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:50634, SC (null)
+Request received from client at 127.0.0.1:50634, CV Survey (null) 
+Sending response to client at 127.0.0.1:50634, SC SPL:1,Javscript:1,Assembly:1,C:6,Fortran:2,Java:3,Cobol:1,Ruby:1,Butterflies:1,C++:2
+Request received from client at 127.0.0.1:50634, CP Survey (null) 
+Sending response to client at 127.0.0.1:50634, SC (null)
+Request received from client at 127.0.0.1:50634, RW (null) (null) 
+Sending response to client at 127.0.0.1:50634, SC Winner:C
+Closed connection with client at 127.0.0.1:50634

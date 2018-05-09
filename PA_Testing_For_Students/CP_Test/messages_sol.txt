@@ -1,0 +1,13 @@
+REQ:  'CP;GARMANARNAR    ;\x00'
+RESP: 'NR;GARMANARNAR\x00'
+REQ:  'CP;Who_Won        ;\x00'
+RESP: 'PF;Who_Won unopened.\x00'
+REQ:  'OP;Who_Won        ;\x00'
+RESP: 'SC;\x00'
+REQ:  'CP;Region_1       ;\x00'
+RESP: 'SC;\x00'
+REQ:  'CP;Who_Won        ;\x00'
+RESP: 'SC;\x00'
+REQ:  'CP;Region_1       ;\x00'
+RESP: 'PF;Region_1 closed.\x00'
+Client closed connection.

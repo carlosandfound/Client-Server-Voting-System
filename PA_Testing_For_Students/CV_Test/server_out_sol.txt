@@ -1,0 +1,18 @@
+Script started on Fri 04 May 2018 07:39:39 AM CDT
+Server listening on port 8000
+Connection initated from client at 127.0.0.1:50508
+Request received from client at 127.0.0.1:50508, CV Zaphod (null) 
+Sending response to client at 127.0.0.1:50508, NR Zaphod
+Request received from client at 127.0.0.1:50508, CV Who_Won (null) 
+Sending response to client at 127.0.0.1:50508, SC No votes recorded.
+Request received from client at 127.0.0.1:50508, OP Who_Won (null) 
+Sending response to client at 127.0.0.1:50508, SC (null)
+Request received from client at 127.0.0.1:50508, AV Town_1 C:1,B:2,A:3 
+Sending response to client at 127.0.0.1:50508, SC (null)
+Request received from client at 127.0.0.1:50508, CV Who_Won (null) 
+Sending response to client at 127.0.0.1:50508, SC C:1,B:2,A:3
+Request received from client at 127.0.0.1:50508, CP Who_Won (null) 
+Sending response to client at 127.0.0.1:50508, SC (null)
+Request received from client at 127.0.0.1:50508, CV Who_Won (null) 
+Sending response to client at 127.0.0.1:50508, SC C:1,B:2,A:3
+Closed connection with client at 127.0.0.1:50508

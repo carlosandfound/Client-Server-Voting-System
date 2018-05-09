@@ -318,6 +318,7 @@ char* findWinner(struct List* polls) {
 
   for (struct List* n = polls->next; n != NULL; n = n->next) {
     struct Poll* p = (struct Poll*)n->value;
+    // printf("leaf: %s\n", p->name);
 
     // trying to find a winner when a poll is still open
     if (p->status == 1) {
@@ -333,6 +334,7 @@ char* findWinner(struct List* polls) {
     }
 
     for (struct Map* c = p->candidates->next; c != NULL; c = c->next) {
+      // printf("%s: %i\n", c->key, (int)c->value);
       if (((int)c->value) > winnerCount) {
         winner = true;
         winnerName = c->key;
@@ -473,7 +475,7 @@ unsigned int isLeaf(struct List* polls, char* region) {
   for (struct List* n = polls->next; n != NULL; n = n->next) {
     struct Poll* p = (struct Poll*)n->value;
 
-    if (p->name == region) {
+    if (strcmp(p->name, region) == 0) {
       if (p->children->next == NULL) {
         // is leaf
         return 0;
@@ -493,67 +495,73 @@ void handleRequest(struct ThreadArgs* args) {
   // assumed max buffer length
   int bufferLength = 256;
   char* buffer = malloc(sizeof(char)*bufferLength);
+  int readSize;
 
-  int readSize = recv(args->socket, (void*)buffer, bufferLength, 0);
-  printf(
-    "Request received from client at %s:%i,%s\n",
-    inet_ntoa(args->clientAddress->sin_addr),
-    (int)ntohs(args->clientAddress->sin_port),
-    buffer);
+  while ((readSize = recv(args->socket, (void*)buffer, bufferLength, 0)) > 0) {
+    printf(
+      "Request received from client at %s:%i, %s\n",
+      inet_ntoa(args->clientAddress->sin_addr),
+      (int)ntohs(args->clientAddress->sin_port),
+      buffer);
 
-  char** msgStrings = malloc(sizeof(char)*bufferLength);
-  int numTokens = makeargv(buffer, ";", &msgStrings);
+    char** msgStrings = malloc(sizeof(char)*bufferLength);
+    int numTokens = makeargv(buffer, ";", &msgStrings);
 
-  // trim whitespace
-  for (int i = 0; i < numTokens; i++) {
-    trimwhitespace(msgStrings[i]);
+    // trim whitespace
+    for (int i = 0; i < numTokens; i++) {
+      trimwhitespace(msgStrings[i]);
+    }
+
+    // handle request by type
+    char* responseData;
+
+    if (strcmp(msgStrings[0], "AV") == 0) {
+      if (isLeaf(args->polls, msgStrings[1]) != 0) {
+        responseData = malloc(sizeof(char)*3 + sizeof(char)*strlen(msgStrings[1]));
+        sprintf(responseData, "NL;%s\0", msgStrings[1]);
+        responseBuf = 18;
+      } else {
+        responseData = addVotes(args->polls, msgStrings[1], msgStrings[2]);
+      }
+    } else if (strcmp(msgStrings[0], "RV") == 0) {
+      if (isLeaf(args->polls, msgStrings[1]) != 0) {
+        responseData = malloc(sizeof(char)*3 + sizeof(char)*strlen(msgStrings[1]));
+        sprintf(responseData, "NL;%s\0", msgStrings[1]);
+        responseBuf = 18;
+      } else {
+        responseData = removeVotes(args->polls, msgStrings[1], msgStrings[2]);
+      }
+    } else if (strcmp(msgStrings[0], "OP") == 0) {
+      responseData = setStatus(args->polls, msgStrings[1], 1);
+    } else if (strcmp(msgStrings[0], "CP") == 0) {
+      responseData = setStatus(args->polls, msgStrings[1], 0);
+    } else if (strcmp(msgStrings[0], "RW") == 0) {
+      responseData = findWinner(args->polls);
+    } else if (strcmp(msgStrings[0], "CV") == 0) {
+      responseData = countVotes(args->polls, msgStrings[1]);
+    } else if (strcmp(msgStrings[0], "AR") == 0) {
+      // pthread_mutex_lock(args->masterLock);
+      responseData = addRegion(args->polls, msgStrings[1], msgStrings[2]);
+      // pthread_mutex_unlock(args->masterLock);
+    } else {
+      responseData = malloc(sizeof(char)*256);
+      sprintf(responseData, "UC;%s\0", msgStrings[0]);
+      responseBuf = 256;
+    }
+
+    // send back response data
+    printf(
+      "Sending response to client at %s:%i,%s\n",
+      inet_ntoa(args->clientAddress->sin_addr),
+      (int)ntohs(args->clientAddress->sin_port),
+      responseData);
+
+    write(args->socket, responseData, responseBuf);
+
+    free(responseData);
+    free(msgStrings);
   }
 
-  // handle request by type
-  char* responseData;
-
-  if (strcmp(msgStrings[0], "AV") == 0) {
-    if (isLeaf(args->polls, msgStrings[1]) != 0) {
-      responseData = malloc(sizeof(char)*3 + sizeof(char)*strlen(msgStrings[1]));
-      sprintf(responseData, "NL;%s\0", msgStrings[1]);
-      responseBuf = 18;
-    } else {
-      responseData = addVotes(args->polls, msgStrings[1], msgStrings[2]);
-    }
-  } else if (strcmp(msgStrings[0], "RV") == 0) {
-    if (isLeaf(args->polls, msgStrings[1]) != 0) {
-      responseData = malloc(sizeof(char)*3 + sizeof(char)*strlen(msgStrings[1]));
-      sprintf(responseData, "NL;%s\0", msgStrings[1]);
-      responseBuf = 18;
-    } else {
-      responseData = removeVotes(args->polls, msgStrings[1], msgStrings[2]);
-    }
-  } else if (strcmp(msgStrings[0], "OP") == 0) {
-    responseData = setStatus(args->polls, msgStrings[1], 1);
-  } else if (strcmp(msgStrings[0], "CP") == 0) {
-    responseData = setStatus(args->polls, msgStrings[1], 0);
-  } else if (strcmp(msgStrings[0], "RW") == 0) {
-    responseData = findWinner(args->polls);
-  } else if (strcmp(msgStrings[0], "CV") == 0) {
-    responseData = countVotes(args->polls, msgStrings[1]);
-  } else if (strcmp(msgStrings[0], "AR") == 0) {
-    pthread_mutex_lock(args->masterLock);
-    responseData = addRegion(args->polls, msgStrings[1], msgStrings[2]);
-    pthread_mutex_unlock(args->masterLock);
-  } else {
-    responseData = malloc(sizeof(char)*256);
-    sprintf(responseData, "UC;%s\0", msgStrings[0]);
-    responseBuf = 256;
-  }
-
-  // send back response data
-  printf(
-    "Sending response to client at %s:%i,%s\n",
-    inet_ntoa(args->clientAddress->sin_addr),
-    (int)ntohs(args->clientAddress->sin_port),
-    responseData);
-
-  write(args->socket, responseData, responseBuf);
   close(args->socket);
   printf(
     "Closed connection with client at %s:%i\n",
@@ -561,10 +569,7 @@ void handleRequest(struct ThreadArgs* args) {
     (int)ntohs(args->clientAddress->sin_port));
 
   // free args and stuff
-  free(responseData);
-  free(msgStrings);
   free(buffer);
-
   free(args->clientAddress);
 }
 

@@ -1,0 +1,4 @@
+Initiated connection with server at 127.0.0.1:4062
+Sending request to server: OP Survey (null)
+Received response from server: SC (null)
+Closed connection with server at 127.0.0.1:4062

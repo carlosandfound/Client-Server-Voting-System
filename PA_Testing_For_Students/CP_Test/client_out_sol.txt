@@ -1,0 +1,14 @@
+Initiated connection with server at 127.0.0.1:8001
+Sending request to server: CP GARMANARNAR (null)
+Received response from server: NR GARMANARNAR
+Sending request to server: CP Who_Won (null)
+Received response from server: PF Who_Won unopened.
+Sending request to server: OP Who_Won (null)
+Received response from server: SC (null)
+Sending request to server: CP Region_1 (null)
+Received response from server: SC (null)
+Sending request to server: CP Who_Won (null)
+Received response from server: SC (null)
+Sending request to server: CP Region_1 (null)
+Received response from server: PF Region_1 closed.
+Closed connection with server at 127.0.0.1:8001
