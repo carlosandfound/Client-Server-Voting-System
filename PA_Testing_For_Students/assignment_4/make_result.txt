@@ -1,0 +1,4 @@
+make[1]: Entering directory '/home/herzo175/csci4061/assignment_4/PA_Testing_For_Students/assignment_4'
+gcc -std=c99 -pthread -o client client.c
+gcc -std=c99 -pthread -o server server.c
+make[1]: Leaving directory '/home/herzo175/csci4061/assignment_4/PA_Testing_For_Students/assignment_4'

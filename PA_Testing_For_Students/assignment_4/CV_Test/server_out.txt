@@ -1,0 +1,18 @@
+Script started on Wed 09 May 2018 07:15:17 PM CDT
+Server listening on port 4065
+Connection initiated from client at 127.0.0.1:57670
+Request received from client at 127.0.0.1:57670, CV;Zaphod         ;
+Sending response to client at 127.0.0.1:57670,NR;Zaphod
+Request received from client at 127.0.0.1:57670, CV;Who_Won        ;
+Sending response to client at 127.0.0.1:57670,SC;No votes.
+Request received from client at 127.0.0.1:57670, OP;Who_Won        ;
+Sending response to client at 127.0.0.1:57670,SC;
+Request received from client at 127.0.0.1:57670, AV;Town_1         ;C:1,B:2,A:3
+Sending response to client at 127.0.0.1:57670,SC;
+Request received from client at 127.0.0.1:57670, CV;Who_Won        ;
+Sending response to client at 127.0.0.1:57670,SC;C:1,B:2,A:3
+Request received from client at 127.0.0.1:57670, CP;Who_Won        ;
+Sending response to client at 127.0.0.1:57670,SC;
+Request received from client at 127.0.0.1:57670, CV;Who_Won        ;
+Sending response to client at 127.0.0.1:57670,SC;C:1,B:2,A:3
+Closed connection with client at 127.0.0.1:57670

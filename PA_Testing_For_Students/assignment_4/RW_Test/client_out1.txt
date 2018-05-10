@@ -1,0 +1,16 @@
+Initiated connection with server at 127.0.0.1:4072
+Sending request to server: RW;               ;
+Recieved response from server: UE;
+Sending request to server: OP;Who_Won        ;
+Recieved response from server: SC;
+Sending request to server: RW;               ;
+Recieved response from server: RO;Town_1
+Sending request to server: AV;Town_1         ;C:1,B:2,A:3
+Recieved response from server: SC;
+Sending request to server: RW;               ;
+Recieved response from server: RO;Town_1
+Sending request to server: CP;Who_Won        ;
+Recieved response from server: SC;
+Sending request to server: RW;               ;
+Recieved response from server: SC;Winner:A
+Closed connection with server at 127.0.0.1:4072

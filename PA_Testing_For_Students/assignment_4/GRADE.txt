@@ -1,0 +1,28 @@
+Readme appears to exist.
+
+Makefile appears to exist
+
+Server appears to exist and client appears to exist.
+
+Server output when called with empty file [Error: The following file does not exist: './nope.txt']
+Client output when called without server [Error: The following file does not exist: './nope.txt']
+
+--------------------Command Test Cases----------------------
+AV_Test: (5, '  []', 'File: /home/herzo175/csci4061/assignment_4/PA_Testing_For_Students/assignment_4/AV_Test/messages.txt')
+CP_Test: (5, '  []', 'File: /home/herzo175/csci4061/assignment_4/PA_Testing_For_Students/assignment_4/CP_Test/messages.txt')
+CV_Test: (5, '  []', 'File: /home/herzo175/csci4061/assignment_4/PA_Testing_For_Students/assignment_4/CV_Test/messages.txt')
+OP_Test: (5, '  []', 'File: /home/herzo175/csci4061/assignment_4/PA_Testing_For_Students/assignment_4/OP_Test/messages.txt')
+RV_Test: (5, '  []', 'File: /home/herzo175/csci4061/assignment_4/PA_Testing_For_Students/assignment_4/RV_Test/messages.txt')
+RW_Test: (5, '  []', 'File: /home/herzo175/csci4061/assignment_4/PA_Testing_For_Students/assignment_4/RW_Test/messages.txt')
+-------------------Single Client Test Cases------------------
+TestCase01: (5, '  []', 'File: /home/herzo175/csci4061/assignment_4/PA_Testing_For_Students/assignment_4/TestCase01/messages.txt')
+TestCase02: (5, '  []', 'File: /home/herzo175/csci4061/assignment_4/PA_Testing_For_Students/assignment_4/TestCase02/messages.txt')
+TestCase03: (5, '  []', 'File: /home/herzo175/csci4061/assignment_4/PA_Testing_For_Students/assignment_4/TestCase03/messages.txt')
+TestCase04: (5, '  []', 'File: /home/herzo175/csci4061/assignment_4/PA_Testing_For_Students/assignment_4/TestCase04/messages.txt')
+------------------Multi-Client Test Cases--------------------
+TestCase05: -1
+TestCase06: -1
+TestCase07: -1
+-----------------Extra Credit Test Cases---------------------
+TestCaseE1: -1
+TestCaseE2: -1

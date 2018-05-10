@@ -1,0 +1,16 @@
+Script started on Wed 09 May 2018 07:15:16 PM CDT
+Server listening on port 4063
+Connection initiated from client at 127.0.0.1:58306
+Request received from client at 127.0.0.1:58306, CP;GARMANARNAR    ;
+Sending response to client at 127.0.0.1:58306,NR;GARMANARNAR
+Request received from client at 127.0.0.1:58306, CP;Who_Won        ;
+Sending response to client at 127.0.0.1:58306,PF;Who_Won:Inital
+Request received from client at 127.0.0.1:58306, OP;Who_Won        ;
+Sending response to client at 127.0.0.1:58306,SC;
+Request received from client at 127.0.0.1:58306, CP;Region_1       ;
+Sending response to client at 127.0.0.1:58306,SC;
+Request received from client at 127.0.0.1:58306, CP;Who_Won        ;
+Sending response to client at 127.0.0.1:58306,SC;
+Request received from client at 127.0.0.1:58306, CP;Region_1       ;
+Sending response to client at 127.0.0.1:58306,PF;Region_1:Closed
+Closed connection with client at 127.0.0.1:58306

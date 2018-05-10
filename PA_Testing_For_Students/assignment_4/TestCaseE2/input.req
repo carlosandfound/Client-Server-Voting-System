@@ -1,0 +1,18 @@
+Add_Region Who_Won GARMANARNAR
+Add_Region Survey HennipenCounty
+Add_Region Survey RamseyCounty
+Add_Region HennipenCounty Minneapolis
+Add_Region HennipenCounty Bloomington
+Add_Region HennipenCounty Richfield
+Add_Region HennipenCounty Edina
+Add_Region RamseyCounty StPaul
+Add_Region RamseyCounty StPaul
+Open_Polls Survey
+Add_Votes Minneapolis Minneapolis.votes
+Add_Votes Richfield Richfield.votes
+Add_Votes Bloomington Bloomington.votes
+Add_Votes Edina Edina.votes
+Add_Votes StPaul StPaul.votes
+Count_Votes Survey
+Close_Polls Survey
+Return_Winner 

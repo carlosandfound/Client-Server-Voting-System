@@ -1,0 +1,40 @@
+Script started on Fri 04 May 2018 07:43:36 AM CDT
+Server listening on port 8000
+Connection initated from client at 127.0.0.1:50530
+Request received from client at 127.0.0.1:50530, RV Region_1 C:1,B:2,A:3 
+Sending response to client at 127.0.0.1:50530, NL Region_1
+Request received from client at 127.0.0.1:50530, RV Who_Won C:1,B:2,A:3 
+Sending response to client at 127.0.0.1:50530, NL Who_Won
+Request received from client at 127.0.0.1:50530, RV County_88 C:1,B:2,A:3 
+Sending response to client at 127.0.0.1:50530, NR County_88
+Request received from client at 127.0.0.1:50530, RV Town_1 C:1,B:2,A:3 
+Sending response to client at 127.0.0.1:50530, RC Town_1
+Request received from client at 127.0.0.1:50530, OP Who_Won (null) 
+Sending response to client at 127.0.0.1:50530, SC (null)
+Request received from client at 127.0.0.1:50530, RV Region_1 C:1,B:2,A:3 
+Sending response to client at 127.0.0.1:50530, NL Region_1
+Request received from client at 127.0.0.1:50530, RV Who_Won C:1,B:2,A:3 
+Sending response to client at 127.0.0.1:50530, NL Who_Won
+Request received from client at 127.0.0.1:50530, RV County_88 C:1,B:2,A:3 
+Sending response to client at 127.0.0.1:50530, NR County_88
+Request received from client at 127.0.0.1:50530, RV Town_1 C:1,B:2,A:3 
+Sending response to client at 127.0.0.1:50530, IS C,B,A
+Request received from client at 127.0.0.1:50530, AV Town_1 C:1,B:2,A:3 
+Sending response to client at 127.0.0.1:50530, SC (null)
+Request received from client at 127.0.0.1:50530, AV Town_1 C:1,B:2,A:3 
+Sending response to client at 127.0.0.1:50530, SC (null)
+Request received from client at 127.0.0.1:50530, RV Town_1 C:1,B:2,A:3 
+Sending response to client at 127.0.0.1:50530, SC (null)
+Request received from client at 127.0.0.1:50530, RV Town_1 A:1,B:1,D:3 
+Sending response to client at 127.0.0.1:50530, IS D
+Request received from client at 127.0.0.1:50530, RV Town_1 C:2 
+Sending response to client at 127.0.0.1:50530, IS C
+Request received from client at 127.0.0.1:50530, CP Who_Won (null) 
+Sending response to client at 127.0.0.1:50530, SC (null)
+Request received from client at 127.0.0.1:50530, RV County_1 C:1,B:2,A:3 
+Sending response to client at 127.0.0.1:50530, RC County_1
+Request received from client at 127.0.0.1:50530, CV Who_Won (null) 
+Sending response to client at 127.0.0.1:50530, SC C:1,B:2,A:3
+Request received from client at 127.0.0.1:50530, RW (null) (null) 
+Sending response to client at 127.0.0.1:50530, SC Winner:A
+Closed connection with client at 127.0.0.1:50530

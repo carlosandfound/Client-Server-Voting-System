@@ -1,0 +1,8 @@
+Initiated connection with server at 127.0.0.1:4066
+Sending request to server: CP Survey (null)
+Received response from server: SC (null)
+Sending request to server: CV Survey (null)
+Received response from server: SC SPL:60,Javscript:60,Assembly:60,C:365,Fortran:99,Java:158,Cobol:40,Ruby:59,Butterflies:126,C++:252
+Sending request to server: RW (null) (null)
+Received response from server: SC Winner:C
+Closed connection with server at 127.0.0.1:4066

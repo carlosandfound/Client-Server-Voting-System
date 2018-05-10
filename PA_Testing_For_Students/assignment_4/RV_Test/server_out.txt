@@ -1,0 +1,39 @@
+Script started on Wed 09 May 2018 07:15:19 PM CDT
+Server listening on port 4069
+Connection initiated from client at 127.0.0.1:60902
+Request received from client at 127.0.0.1:60902, RV;Region_1       ;C:1,B:2,A:3
+Sending response to client at 127.0.0.1:60902,NL;Region_1
+Request received from client at 127.0.0.1:60902, RV;Who_Won        ;C:1,B:2,A:3
+Sending response to client at 127.0.0.1:60902,NL;Who_Won
+Request received from client at 127.0.0.1:60902, RV;County_88      ;C:1,B:2,A:3
+Sending response to client at 127.0.0.1:60902,NR;County_88
+Request received from client at 127.0.0.1:60902, RV;Town_1         ;C:1,B:2,A:3
+Sending response to client at 127.0.0.1:60902,RC;Town_1
+Request received from client at 127.0.0.1:60902, OP;Who_Won        ;
+Sending response to client at 127.0.0.1:60902,SC;
+Request received from client at 127.0.0.1:60902, RV;Region_1       ;C:1,B:2,A:3
+Sending response to client at 127.0.0.1:60902,NL;Region_1
+Request received from client at 127.0.0.1:60902, RV;Who_Won        ;C:1,B:2,A:3
+Sending response to client at 127.0.0.1:60902,NL;Who_Won
+Request received from client at 127.0.0.1:60902, RV;County_88      ;C:1,B:2,A:3
+Sending response to client at 127.0.0.1:60902,NR;County_88
+Request received from client at 127.0.0.1:60902, RV;Town_1         ;C:1,B:2,A:3
+Sending response to client at 127.0.0.1:60902,IS;C
+Request received from client at 127.0.0.1:60902, AV;Town_1         ;C:1,B:2,A:3
+Sending response to client at 127.0.0.1:60902,SC;
+Request received from client at 127.0.0.1:60902, AV;Town_1         ;C:1,B:2,A:3
+Sending response to client at 127.0.0.1:60902,SC;
+Request received from client at 127.0.0.1:60902, RV;Town_1         ;C:1,B:2,A:3
+Sending response to client at 127.0.0.1:60902,SC;
+Request received from client at 127.0.0.1:60902, RV;Town_1         ;A:1,B:1,D:3
+Sending response to client at 127.0.0.1:60902,IS;D
+Request received from client at 127.0.0.1:60902, RV;Town_1         ;C:2
+Sending response to client at 127.0.0.1:60902,IS;C
+Request received from client at 127.0.0.1:60902, CP;Who_Won        ;
+Sending response to client at 127.0.0.1:60902,SC;
+Request received from client at 127.0.0.1:60902, RV;County_1       ;C:1,B:2,A:3
+Sending response to client at 127.0.0.1:60902,RC;County_1
+Request received from client at 127.0.0.1:60902, CV;Who_Won        ;
+Sending response to client at 127.0.0.1:60902,SC;C:1,B:1,A:2
+Request received from client at 127.0.0.1:60902, RW;               ;
+Sending response to client at 127.0.0.1:60902,SC;Winner:A

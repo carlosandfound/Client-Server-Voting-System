@@ -1,0 +1,176 @@
+Initiated connection with server at 127.0.0.1:4103
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Sending request to server: RV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;a:2,C:1,Fortran:1
+Closed connection with server at 127.0.0.1:4103

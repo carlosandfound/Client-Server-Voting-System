@@ -1,0 +1,26 @@
+Initiated connection with server at 127.0.0.1:4100
+Sending request to server: AR;Who_Won        ;Region_1
+Recieved response from server: SC;
+Sending request to server: AR;Who_Won        ;Region_2
+Recieved response from server: SC;
+Sending request to server: AR;Region_1       ;County_1
+Recieved response from server: SC;
+Sending request to server: AR;Region_1       ;County_2
+Recieved response from server: SC;
+Sending request to server: OP;Who_Won        ;
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;B:2,A:2
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;C:5,A:1
+Recieved response from server: SC;
+Sending request to server: AV;Region_2       ;B:2,D:1
+Recieved response from server: SC;
+Sending request to server: CV;Region_1       ;
+Recieved response from server: SC;B:2,C:5,A:3
+Sending request to server: CP;Who_Won        ;
+Recieved response from server: SC;
+Sending request to server: CV;Who_Won        ;
+Recieved response from server: SC;C:5,A:3,B:4,D:1
+Sending request to server: RW;               ;
+Recieved response from server: SC;Winner:C
+Closed connection with server at 127.0.0.1:4100

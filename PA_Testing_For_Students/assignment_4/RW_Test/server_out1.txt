@@ -1,0 +1,18 @@
+Script started on Wed 09 May 2018 07:15:20 PM CDT
+Server listening on port 4071
+Connection initiated from client at 127.0.0.1:42878
+Request received from client at 127.0.0.1:42878, RW;               ;
+Sending response to client at 127.0.0.1:42878,UE;
+Request received from client at 127.0.0.1:42878, OP;Who_Won        ;
+Sending response to client at 127.0.0.1:42878,SC;
+Request received from client at 127.0.0.1:42878, RW;               ;
+Sending response to client at 127.0.0.1:42878,RO;Town_1
+Request received from client at 127.0.0.1:42878, AV;Town_1         ;C:1,B:2,A:3
+Sending response to client at 127.0.0.1:42878,SC;
+Request received from client at 127.0.0.1:42878, RW;               ;
+Sending response to client at 127.0.0.1:42878,RO;Town_1
+Request received from client at 127.0.0.1:42878, CP;Who_Won        ;
+Sending response to client at 127.0.0.1:42878,SC;
+Request received from client at 127.0.0.1:42878, RW;               ;
+Sending response to client at 127.0.0.1:42878,SC;Winner:A
+Closed connection with client at 127.0.0.1:42878

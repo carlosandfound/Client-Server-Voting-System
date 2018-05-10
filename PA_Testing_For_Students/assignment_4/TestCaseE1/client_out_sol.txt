@@ -1,0 +1,26 @@
+Initiated connection with server at 127.0.0.1:8001
+Sending request to server: AR Who_Won Region_1
+Received response from server: SC (null)
+Sending request to server: AR Who_Won Region_2
+Received response from server: SC (null)
+Sending request to server: AR Region_1 County_1
+Received response from server: SC (null)
+Sending request to server: AR Region_1 County_2
+Received response from server: SC (null)
+Sending request to server: OP Who_Won (null)
+Received response from server: SC (null)
+Sending request to server: AV County_1 B:2,A:2
+Received response from server: SC (null)
+Sending request to server: AV County_2 C:5,A:1
+Received response from server: SC (null)
+Sending request to server: AV Region_2 B:2,D:1
+Received response from server: SC (null)
+Sending request to server: CV Region_1 (null)
+Received response from server: SC A:3,B:2,C:5
+Sending request to server: CP Who_Won (null)
+Received response from server: SC (null)
+Sending request to server: CV Who_Won (null)
+Received response from server: SC A:3,B:4,C:5,D:1
+Sending request to server: RW (null) (null)
+Received response from server: SC Winner:C
+Closed connection with server at 127.0.0.1:8001

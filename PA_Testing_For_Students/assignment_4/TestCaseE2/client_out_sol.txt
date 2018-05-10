@@ -1,0 +1,38 @@
+Initiated connection with server at 127.0.0.1:8001
+Sending request to server: AR Who_Won GARMANARNAR
+Received response from server: NR Who_Won
+Sending request to server: AR Survey HennipenCounty
+Received response from server: SC (null)
+Sending request to server: AR Survey RamseyCounty
+Received response from server: SC (null)
+Sending request to server: AR HennipenCounty Minneapolis
+Received response from server: SC (null)
+Sending request to server: AR HennipenCounty Bloomington
+Received response from server: SC (null)
+Sending request to server: AR HennipenCounty Richfield
+Received response from server: SC (null)
+Sending request to server: AR HennipenCounty Edina
+Received response from server: SC (null)
+Sending request to server: AR RamseyCounty StPaul
+Received response from server: SC (null)
+Sending request to server: AR RamseyCounty StPaul
+Received response from server: UE Region exists with that name.
+Sending request to server: OP Survey (null)
+Received response from server: SC (null)
+Sending request to server: AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Bloomington Java:2,C:1,Fortran:1
+Received response from server: SC (null)
+Sending request to server: AV Edina Ruby:1
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: CV Survey (null)
+Received response from server: SC SPL:1,Javscript:1,Assembly:1,C:6,Fortran:2,Java:3,Cobol:1,Ruby:1,Butterflies:1,C++:2
+Sending request to server: CP Survey (null)
+Received response from server: SC (null)
+Sending request to server: RW (null) (null)
+Received response from server: SC Winner:C
+Closed connection with server at 127.0.0.1:8001

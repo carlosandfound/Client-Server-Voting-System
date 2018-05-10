@@ -1,0 +1,20 @@
+Script started on Fri 04 May 2018 07:51:01 AM CDT
+Server listening on port 8000
+Connection initated from client at 127.0.0.1:50614
+Request received from client at 127.0.0.1:50614, OP Who_Won (null) 
+Sending response to client at 127.0.0.1:50614, SC (null)
+Request received from client at 127.0.0.1:50614, AV County_1 B:2,A:2 
+Sending response to client at 127.0.0.1:50614, SC (null)
+Request received from client at 127.0.0.1:50614, AV County_2 C:5,A:1 
+Sending response to client at 127.0.0.1:50614, SC (null)
+Request received from client at 127.0.0.1:50614, AV Region_2 B:2,D:1 
+Sending response to client at 127.0.0.1:50614, SC (null)
+Request received from client at 127.0.0.1:50614, CV Region_1 (null) 
+Sending response to client at 127.0.0.1:50614, SC A:3,B:2,C:5
+Request received from client at 127.0.0.1:50614, CP Who_Won (null) 
+Sending response to client at 127.0.0.1:50614, SC (null)
+Request received from client at 127.0.0.1:50614, CV Who_Won (null) 
+Sending response to client at 127.0.0.1:50614, SC A:3,B:4,C:5,D:1
+Request received from client at 127.0.0.1:50614, RW (null) (null) 
+Sending response to client at 127.0.0.1:50614, SC Winner:C
+Closed connection with client at 127.0.0.1:50614

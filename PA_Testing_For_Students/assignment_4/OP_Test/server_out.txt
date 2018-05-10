@@ -1,0 +1,20 @@
+Script started on Wed 09 May 2018 07:15:18 PM CDT
+Server listening on port 4067
+Connection initiated from client at 127.0.0.1:33182
+Request received from client at 127.0.0.1:33182, OP;GARMANARNAR    ;
+Sending response to client at 127.0.0.1:33182,NR;GARMANARNAR
+Request received from client at 127.0.0.1:33182, OP;Region_1       ;
+Sending response to client at 127.0.0.1:33182,SC;
+Request received from client at 127.0.0.1:33182, OP;Who_Won        ;
+Sending response to client at 127.0.0.1:33182,SC;
+Request received from client at 127.0.0.1:33182, OP;Region_1       ;
+Sending response to client at 127.0.0.1:33182,PF;Region_1:Open
+Request received from client at 127.0.0.1:33182, OP;Who_Won        ;
+Sending response to client at 127.0.0.1:33182,PF;Who_Won:Open
+Request received from client at 127.0.0.1:33182, CP;Who_Won        ;
+Sending response to client at 127.0.0.1:33182,SC;
+Request received from client at 127.0.0.1:33182, OP;Who_Won        ;
+Sending response to client at 127.0.0.1:33182,RR;Who_Won
+Request received from client at 127.0.0.1:33182, OP;Region_1       ;
+Sending response to client at 127.0.0.1:33182,RR;Region_1
+Closed connection with client at 127.0.0.1:33182

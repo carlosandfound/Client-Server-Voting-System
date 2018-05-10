@@ -1,0 +1,14 @@
+Initiated connection with server at 127.0.0.1:4064
+Sending request to server: CP;GARMANARNAR    ;
+Recieved response from server: NR;GARMANARNAR
+Sending request to server: CP;Who_Won        ;
+Recieved response from server: PF;Who_Won:Inital
+Sending request to server: OP;Who_Won        ;
+Recieved response from server: SC;
+Sending request to server: CP;Region_1       ;
+Recieved response from server: SC;
+Sending request to server: CP;Who_Won        ;
+Recieved response from server: SC;
+Sending request to server: CP;Region_1       ;
+Recieved response from server: PF;Region_1:Closed
+Closed connection with server at 127.0.0.1:4064

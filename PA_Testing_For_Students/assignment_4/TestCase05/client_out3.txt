@@ -1,0 +1,122 @@
+Initiated connection with server at 127.0.0.1:4088
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_1       ;D:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Sending request to server: AV;County_2       ;E:1,A:1
+Recieved response from server: SC;
+Closed connection with server at 127.0.0.1:4088

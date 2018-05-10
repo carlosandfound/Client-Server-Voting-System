@@ -1,0 +1,10 @@
+Script started on Wed 09 May 2018 07:15:21 PM CDT
+Server listening on port 4073
+Connection initiated from client at 127.0.0.1:33974
+Request received from client at 127.0.0.1:33974, OP;Who_Won        ;
+Sending response to client at 127.0.0.1:33974,SC;
+Request received from client at 127.0.0.1:33974, CP;Who_Won        ;
+Sending response to client at 127.0.0.1:33974,SC;
+Request received from client at 127.0.0.1:33974, RW;               ;
+Sending response to client at 127.0.0.1:33974,SC:Winner:No winner
+Closed connection with client at 127.0.0.1:33974

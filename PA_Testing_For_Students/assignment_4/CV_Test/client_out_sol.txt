@@ -1,0 +1,16 @@
+Initiated connection with server at 127.0.0.1:8001
+Sending request to server: CV Zaphod (null)
+Received response from server: NR Zaphod
+Sending request to server: CV Who_Won (null)
+Received response from server: SC No votes recorded.
+Sending request to server: OP Who_Won (null)
+Received response from server: SC (null)
+Sending request to server: AV Town_1 C:1,B:2,A:3
+Received response from server: SC (null)
+Sending request to server: CV Who_Won (null)
+Received response from server: SC C:1,B:2,A:3
+Sending request to server: CP Who_Won (null)
+Received response from server: SC (null)
+Sending request to server: CV Who_Won (null)
+Received response from server: SC C:1,B:2,A:3
+Closed connection with server at 127.0.0.1:8001

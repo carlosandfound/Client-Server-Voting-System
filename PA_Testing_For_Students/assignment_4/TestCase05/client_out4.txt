@@ -1,0 +1,8 @@
+Initiated connection with server at 127.0.0.1:4089
+Sending request to server: CP;Who_Won        ;
+Recieved response from server: SC;
+Sending request to server: CV;Who_Won        ;
+Recieved response from server: SC;D:30,B:30,E:30,A:120,C:30
+Sending request to server: RW;               ;
+Recieved response from server: SC;Winner:A
+Closed connection with server at 127.0.0.1:4089

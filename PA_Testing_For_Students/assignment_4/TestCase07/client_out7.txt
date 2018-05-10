@@ -1,0 +1,8 @@
+Initiated connection with server at 127.0.0.1:4104
+Sending request to server: CP;Survey         ;
+Recieved response from server: SC;
+Sending request to server: CV;Survey         ;
+Recieved response from server: SC;Cobol:40,Java:156,Fortran:98,SPL:60,Javscript:84,Assembly:84,Ruby:59,C:364,Butterflies:126,C++:252
+Sending request to server: RW;               ;
+Recieved response from server: SC;Winner:C
+Closed connection with server at 127.0.0.1:4104

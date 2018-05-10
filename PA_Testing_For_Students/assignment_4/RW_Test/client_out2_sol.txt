@@ -1,0 +1,8 @@
+Initiated connection with server at 127.0.0.1:9003
+Sending request to server: OP Who_Won (null)
+Received response from server: SC (null)
+Sending request to server: CP Who_Won (null)
+Received response from server: SC (null)
+Sending request to server: RW (null) (null)
+Received response from server: SC No votes.
+Closed connection with server at 127.0.0.1:9003

@@ -1,0 +1,20 @@
+Script started on Wed 09 May 2018 07:15:22 PM CDT
+Server listening on port 4075
+Connection initiated from client at 127.0.0.1:47734
+Request received from client at 127.0.0.1:47734, OP;Who_Won        ;
+Sending response to client at 127.0.0.1:47734,SC;
+Request received from client at 127.0.0.1:47734, AV;County_1       ;B:2,A:2
+Sending response to client at 127.0.0.1:47734,SC;
+Request received from client at 127.0.0.1:47734, AV;County_2       ;C:5,A:1
+Sending response to client at 127.0.0.1:47734,SC;
+Request received from client at 127.0.0.1:47734, AV;Region_2       ;B:2,D:1
+Sending response to client at 127.0.0.1:47734,SC;
+Request received from client at 127.0.0.1:47734, CV;Region_1       ;
+Sending response to client at 127.0.0.1:47734,SC;B:2,C:5,A:3
+Request received from client at 127.0.0.1:47734, CP;Who_Won        ;
+Sending response to client at 127.0.0.1:47734,SC;
+Request received from client at 127.0.0.1:47734, CV;Who_Won        ;
+Sending response to client at 127.0.0.1:47734,SC;C:5,A:3,B:4,D:1
+Request received from client at 127.0.0.1:47734, RW;               ;
+Sending response to client at 127.0.0.1:47734,SC;Winner:C
+Closed connection with client at 127.0.0.1:47734

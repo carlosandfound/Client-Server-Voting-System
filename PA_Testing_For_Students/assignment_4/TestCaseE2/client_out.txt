@@ -1,0 +1,38 @@
+Initiated connection with server at 127.0.0.1:4102
+Sending request to server: AR;Who_Won        ;GARMANARNAR
+Recieved response from server: NR;(null)
+Sending request to server: AR;Survey         ;HennipenCounty
+Recieved response from server: SC;
+Sending request to server: AR;Survey         ;RamseyCounty
+Recieved response from server: SC;
+Sending request to server: AR;HennipenCounty ;Minneapolis
+Recieved response from server: SC;
+Sending request to server: AR;HennipenCounty ;Bloomington
+Recieved response from server: SC;
+Sending request to server: AR;HennipenCounty ;Richfield
+Recieved response from server: SC;
+Sending request to server: AR;HennipenCounty ;Edina
+Recieved response from server: SC;
+Sending request to server: AR;RamseyCounty   ;StPaul
+Recieved response from server: SC;
+Sending request to server: AR;RamseyCounty   ;StPaul
+Recieved response from server: SC;
+Sending request to server: OP;Survey         ;
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Bloomington    ;Java:2,C:1,Fortran:1
+Recieved response from server: SC;
+Sending request to server: AV;Edina          ;Ruby:1
+Recieved response from server: SC;
+Sending request to server: AV;StPaul         ;C:1,Butterflies:1,C++:2
+Recieved response from server: SC;
+Sending request to server: CV;Survey         ;
+Recieved response from server: SC;Cobol:1,Java:3,Fortran:2,SPL:1,Javscript:1,Assembly:1,Ruby:1,C:6,Butterflies:1,C++:2
+Sending request to server: CP;Survey         ;
+Recieved response from server: SC;
+Sending request to server: RW;               ;
+Recieved response from server: UE;
+Closed connection with server at 127.0.0.1:4102

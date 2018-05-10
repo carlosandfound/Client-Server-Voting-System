@@ -1,0 +1,982 @@
+Script started on Fri 04 May 2018 08:35:46 AM CDT
+Server listening on port 8010
+Connection initated from client at 127.0.0.1:48832
+Request received from client at 127.0.0.1:48832, OP Survey (null) 
+Sending response to client at 127.0.0.1:48832, SC (null)
+Closed connection with client at 127.0.0.1:48832
+Connection initated from client at 127.0.0.1:48836
+Connection initated from client at 127.0.0.1:48838
+Connection initated from client at 127.0.0.1:48840
+Connection initated from client at 127.0.0.1:48844
+Connection initated from client at 127.0.0.1:48846
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48838, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48838, RV Richfield SPL:1,C:1 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48838, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48846, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48846, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48846, RV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48846, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Closed connection with client at 127.0.0.1:48838
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Closed connection with client at 127.0.0.1:48846
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48844, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48844, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48840, AV StPaul C:1,Butterflies:1,C++:2 
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48840, SC (null)
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Closed connection with client at 127.0.0.1:48844
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Request received from client at 127.0.0.1:48836, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:48836, SC (null)
+Closed connection with client at 127.0.0.1:48840
+Closed connection with client at 127.0.0.1:48836
+Connection initated from client at 127.0.0.1:48858
+Request received from client at 127.0.0.1:48858, CP Survey (null) 
+Sending response to client at 127.0.0.1:48858, SC (null)
+Request received from client at 127.0.0.1:48858, CV Survey (null) 
+Sending response to client at 127.0.0.1:48858, SC SPL:60,Javscript:84,Assembly:84,C:364,Fortran:98,Java:156,Cobol:40,Ruby:59,Butterflies:126,C++:252
+Request received from client at 127.0.0.1:48858, RW (null) (null) 
+Sending response to client at 127.0.0.1:48858, SC Winner:C
+Closed connection with client at 127.0.0.1:48858

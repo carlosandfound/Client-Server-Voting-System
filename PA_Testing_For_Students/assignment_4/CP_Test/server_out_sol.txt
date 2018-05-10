@@ -1,0 +1,16 @@
+Script started on Fri 04 May 2018 07:38:04 AM CDT
+Server listening on port 8000
+Connection initated from client at 127.0.0.1:50502
+Request received from client at 127.0.0.1:50502, CP GARMANARNAR (null) 
+Sending response to client at 127.0.0.1:50502, NR GARMANARNAR
+Request received from client at 127.0.0.1:50502, CP Who_Won (null) 
+Sending response to client at 127.0.0.1:50502, PF Who_Won unopened.
+Request received from client at 127.0.0.1:50502, OP Who_Won (null) 
+Sending response to client at 127.0.0.1:50502, SC (null)
+Request received from client at 127.0.0.1:50502, CP Region_1 (null) 
+Sending response to client at 127.0.0.1:50502, SC (null)
+Request received from client at 127.0.0.1:50502, CP Who_Won (null) 
+Sending response to client at 127.0.0.1:50502, SC (null)
+Request received from client at 127.0.0.1:50502, CP Region_1 (null) 
+Sending response to client at 127.0.0.1:50502, PF Region_1 closed.
+Closed connection with client at 127.0.0.1:50502

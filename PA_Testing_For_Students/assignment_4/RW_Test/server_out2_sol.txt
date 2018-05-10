@@ -1,0 +1,10 @@
+Script started on Fri 04 May 2018 07:48:25 AM CDT
+Server listening on port 9002
+Connection initated from client at 127.0.0.1:49896
+Request received from client at 127.0.0.1:49896, OP Who_Won (null) 
+Sending response to client at 127.0.0.1:49896, SC (null)
+Request received from client at 127.0.0.1:49896, CP Who_Won (null) 
+Sending response to client at 127.0.0.1:49896, SC (null)
+Request received from client at 127.0.0.1:49896, RW (null) (null) 
+Sending response to client at 127.0.0.1:49896, SC No votes.
+Closed connection with client at 127.0.0.1:49896

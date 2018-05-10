@@ -1,0 +1,40 @@
+Script started on Wed 09 May 2018 07:15:35 PM CDT
+Server listening on port 4101
+Connection initiated from client at 127.0.0.1:54776
+Request received from client at 127.0.0.1:54776, AR;Who_Won        ;GARMANARNAR
+Sending response to client at 127.0.0.1:54776,NR;(null)
+Request received from client at 127.0.0.1:54776, AR;Survey         ;HennipenCounty
+Sending response to client at 127.0.0.1:54776,SC;
+Request received from client at 127.0.0.1:54776, AR;Survey         ;RamseyCounty
+Sending response to client at 127.0.0.1:54776,SC;
+Request received from client at 127.0.0.1:54776, AR;HennipenCounty ;Minneapolis
+Sending response to client at 127.0.0.1:54776,SC;
+Request received from client at 127.0.0.1:54776, AR;HennipenCounty ;Bloomington
+Sending response to client at 127.0.0.1:54776,SC;
+Request received from client at 127.0.0.1:54776, AR;HennipenCounty ;Richfield
+Sending response to client at 127.0.0.1:54776,SC;
+Request received from client at 127.0.0.1:54776, AR;HennipenCounty ;Edina
+Sending response to client at 127.0.0.1:54776,SC;
+Request received from client at 127.0.0.1:54776, AR;RamseyCounty   ;StPaul
+Sending response to client at 127.0.0.1:54776,SC;
+Request received from client at 127.0.0.1:54776, AR;RamseyCounty   ;StPaul
+Sending response to client at 127.0.0.1:54776,SC;
+Request received from client at 127.0.0.1:54776, OP;Survey         ;
+Sending response to client at 127.0.0.1:54776,SC;
+Request received from client at 127.0.0.1:54776, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:54776,SC;
+Request received from client at 127.0.0.1:54776, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:54776,SC;
+Request received from client at 127.0.0.1:54776, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:54776,SC;
+Request received from client at 127.0.0.1:54776, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:54776,SC;
+Request received from client at 127.0.0.1:54776, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:54776,SC;
+Request received from client at 127.0.0.1:54776, CV;Survey         ;
+Sending response to client at 127.0.0.1:54776,SC;Cobol:1,Java:3,Fortran:2,SPL:1,Javscript:1,Assembly:1,Ruby:1,C:6,Butterflies:1,C++:2
+Request received from client at 127.0.0.1:54776, CP;Survey         ;
+Sending response to client at 127.0.0.1:54776,SC;
+Request received from client at 127.0.0.1:54776, RW;               ;
+Sending response to client at 127.0.0.1:54776,UE;
+Closed connection with client at 127.0.0.1:54776

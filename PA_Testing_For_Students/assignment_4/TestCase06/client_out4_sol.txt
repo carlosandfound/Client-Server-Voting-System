@@ -1,0 +1,254 @@
+Initiated connection with server at 127.0.0.1:4065
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Sending request to server: AV StPaul C:1,Butterflies:1,C++:2
+Received response from server: SC (null)
+Closed connection with server at 127.0.0.1:4065

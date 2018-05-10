@@ -1,0 +1,708 @@
+Script started on Wed 09 May 2018 07:15:29 PM CDT
+Server listening on port 4090
+Connection initiated from client at 127.0.0.1:33706
+Request received from client at 127.0.0.1:33706, OP;Survey         ;
+Sending response to client at 127.0.0.1:33706,SC;
+Closed connection with client at 127.0.0.1:33706
+Connection initiated from client at 127.0.0.1:33710
+Connection initiated from client at 127.0.0.1:33712
+Connection initiated from client at 127.0.0.1:33714
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33710,SC;
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33710,SC;
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33714,SC;
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33714,SC;
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33710,SC;
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33710,SC;
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33710,SC;
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33710,SC;
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33710,SC;
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33712,SC;
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33714,SC;
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33712,SC;
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33714,SC;
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33710,SC;
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33714,SC;
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33714,SC;
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33714,SC;
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33714, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:33714,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Closed connection with client at 127.0.0.1:33714
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33710,SC;
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33712, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:33712,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Closed connection with client at 127.0.0.1:33712
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Request received from client at 127.0.0.1:33710, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:33710,SC;
+Closed connection with client at 127.0.0.1:33710
+Connection initiated from client at 127.0.0.1:33722
+Request received from client at 127.0.0.1:33722, CP;Survey         ;
+Sending response to client at 127.0.0.1:33722,SC;
+Request received from client at 127.0.0.1:33722, CV;Survey         ;
+Sending response to client at 127.0.0.1:33722,SC;Cobol:40,Java:158,Fortran:99,SPL:60,Javscript:60,Assembly:60,Ruby:59,C:365,Butterflies:126,C++:252
+Request received from client at 127.0.0.1:33722, RW;               ;
+Sending response to client at 127.0.0.1:33722,SC;Winner:C
+Closed connection with client at 127.0.0.1:33722

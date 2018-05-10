@@ -1,6 +1,0 @@
-Script started on Mon 07 May 2018 05:40:28 PM CDT
-Server listening on port 4081
-Connection initiated from client at 127.0.0.1:59014
-Request received from client at 127.0.0.1:59014,OP;Survey         ;
-Sending response to client at 127.0.0.1:59014,SC;
-Closed connection with client at 127.0.0.1:59014

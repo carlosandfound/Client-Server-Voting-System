@@ -1,0 +1,18 @@
+Initiated connection with server at 127.0.0.1:4068
+Sending request to server: OP;GARMANARNAR    ;
+Recieved response from server: NR;GARMANARNAR
+Sending request to server: OP;Region_1       ;
+Recieved response from server: SC;
+Sending request to server: OP;Who_Won        ;
+Recieved response from server: SC;
+Sending request to server: OP;Region_1       ;
+Recieved response from server: PF;Region_1:Open
+Sending request to server: OP;Who_Won        ;
+Recieved response from server: PF;Who_Won:Open
+Sending request to server: CP;Who_Won        ;
+Recieved response from server: SC;
+Sending request to server: OP;Who_Won        ;
+Recieved response from server: RR;Who_Won
+Sending request to server: OP;Region_1       ;
+Recieved response from server: RR;Region_1
+Closed connection with server at 127.0.0.1:4068

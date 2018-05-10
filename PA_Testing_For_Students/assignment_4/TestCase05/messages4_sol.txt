@@ -1,0 +1,7 @@
+REQ:  'CP;Who_Won        ;\x00'
+RESP: 'SC;\x00'
+REQ:  'CV;Who_Won        ;\x00'
+RESP: 'SC;D:30,A:120,B:30,C:30,E:30\x00'
+REQ:  'RW;;\x00'
+RESP: 'SC;Winner:A\x00'
+Client closed connection.

@@ -1,0 +1,40 @@
+Script started on Fri 04 May 2018 07:56:22 AM CDT
+Server listening on port 8000
+Connection initated from client at 127.0.0.1:50652
+Request received from client at 127.0.0.1:50652, AR Who_Won GARMANARNAR 
+Sending response to client at 127.0.0.1:50652, NR Who_Won
+Request received from client at 127.0.0.1:50652, AR Survey HennipenCounty 
+Sending response to client at 127.0.0.1:50652, SC (null)
+Request received from client at 127.0.0.1:50652, AR Survey RamseyCounty 
+Sending response to client at 127.0.0.1:50652, SC (null)
+Request received from client at 127.0.0.1:50652, AR HennipenCounty Minneapolis 
+Sending response to client at 127.0.0.1:50652, SC (null)
+Request received from client at 127.0.0.1:50652, AR HennipenCounty Bloomington 
+Sending response to client at 127.0.0.1:50652, SC (null)
+Request received from client at 127.0.0.1:50652, AR HennipenCounty Richfield 
+Sending response to client at 127.0.0.1:50652, SC (null)
+Request received from client at 127.0.0.1:50652, AR HennipenCounty Edina 
+Sending response to client at 127.0.0.1:50652, SC (null)
+Request received from client at 127.0.0.1:50652, AR RamseyCounty StPaul 
+Sending response to client at 127.0.0.1:50652, SC (null)
+Request received from client at 127.0.0.1:50652, AR RamseyCounty StPaul 
+Sending response to client at 127.0.0.1:50652, UE Region exists with that name.
+Request received from client at 127.0.0.1:50652, OP Survey (null) 
+Sending response to client at 127.0.0.1:50652, SC (null)
+Request received from client at 127.0.0.1:50652, AV Minneapolis Cobol:1,Java:1,Fortran:1,C:3 
+Sending response to client at 127.0.0.1:50652, SC (null)
+Request received from client at 127.0.0.1:50652, AV Richfield SPL:1,Javscript:1,Assembly:1,C:1 
+Sending response to client at 127.0.0.1:50652, SC (null)
+Request received from client at 127.0.0.1:50652, AV Bloomington Java:2,C:1,Fortran:1 
+Sending response to client at 127.0.0.1:50652, SC (null)
+Request received from client at 127.0.0.1:50652, AV Edina Ruby:1 
+Sending response to client at 127.0.0.1:50652, SC (null)
+Request received from client at 127.0.0.1:50652, AV StPaul C:1,Butterflies:1,C++:2 
+Sending response to client at 127.0.0.1:50652, SC (null)
+Request received from client at 127.0.0.1:50652, CV Survey (null) 
+Sending response to client at 127.0.0.1:50652, SC SPL:1,Javscript:1,Assembly:1,C:6,Fortran:2,Java:3,Cobol:1,Ruby:1,Butterflies:1,C++:2
+Request received from client at 127.0.0.1:50652, CP Survey (null) 
+Sending response to client at 127.0.0.1:50652, SC (null)
+Request received from client at 127.0.0.1:50652, RW (null) (null) 
+Sending response to client at 127.0.0.1:50652, SC Winner:C
+Closed connection with client at 127.0.0.1:50652

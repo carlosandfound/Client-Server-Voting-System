@@ -1,0 +1,16 @@
+Initiated connection with server at 127.0.0.1:4066
+Sending request to server: CV;Zaphod         ;
+Recieved response from server: NR;Zaphod
+Sending request to server: CV;Who_Won        ;
+Recieved response from server: SC;No votes.
+Sending request to server: OP;Who_Won        ;
+Recieved response from server: SC;
+Sending request to server: AV;Town_1         ;C:1,B:2,A:3
+Recieved response from server: SC;
+Sending request to server: CV;Who_Won        ;
+Recieved response from server: SC;C:1,B:2,A:3
+Sending request to server: CP;Who_Won        ;
+Recieved response from server: SC;
+Sending request to server: CV;Who_Won        ;
+Recieved response from server: SC;C:1,B:2,A:3
+Closed connection with server at 127.0.0.1:4066

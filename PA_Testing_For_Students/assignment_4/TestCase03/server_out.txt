@@ -1,0 +1,22 @@
+Script started on Wed 09 May 2018 07:15:24 PM CDT
+Server listening on port 4079
+Connection initiated from client at 127.0.0.1:50246
+Request received from client at 127.0.0.1:50246, OP;Survey         ;
+Sending response to client at 127.0.0.1:50246,SC;
+Request received from client at 127.0.0.1:50246, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:50246,SC;
+Request received from client at 127.0.0.1:50246, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Sending response to client at 127.0.0.1:50246,SC;
+Request received from client at 127.0.0.1:50246, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:50246,SC;
+Request received from client at 127.0.0.1:50246, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:50246,SC;
+Request received from client at 127.0.0.1:50246, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:50246,SC;
+Request received from client at 127.0.0.1:50246, CV;Survey         ;
+Sending response to client at 127.0.0.1:50246,SC;Cobol:1,Java:3,Fortran:2,SPL:1,Javscript:1,Assembly:1,Ruby:1,C:6,Butterflies:1,C++:2
+Request received from client at 127.0.0.1:50246, CP;Survey         ;
+Sending response to client at 127.0.0.1:50246,SC;
+Request received from client at 127.0.0.1:50246, RW;               ;
+Sending response to client at 127.0.0.1:50246,SC;Winner:C
+Closed connection with client at 127.0.0.1:50246

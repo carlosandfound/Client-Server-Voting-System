@@ -1,0 +1,98 @@
+Initiated connection with server at 127.0.0.1:8015
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: AV Richfield SPL:1,Javscript:1,Assembly:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Sending request to server: RV Richfield SPL:1,C:1
+Received response from server: SC (null)
+Closed connection with server at 127.0.0.1:8015

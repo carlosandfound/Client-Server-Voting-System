@@ -1,0 +1,26 @@
+Script started on Wed 09 May 2018 07:15:25 PM CDT
+Server listening on port 4081
+Connection initiated from client at 127.0.0.1:57484
+Request received from client at 127.0.0.1:57484, OP;Survey         ;
+Sending response to client at 127.0.0.1:57484,SC;
+Request received from client at 127.0.0.1:57484, AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Sending response to client at 127.0.0.1:57484,SC;
+Request received from client at 127.0.0.1:57484, AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:4
+Sending response to client at 127.0.0.1:57484,SC;
+Request received from client at 127.0.0.1:57484, AV;Bloomington    ;Java:2,C:1,Fortran:1
+Sending response to client at 127.0.0.1:57484,SC;
+Request received from client at 127.0.0.1:57484, AV;Edina          ;Ruby:1
+Sending response to client at 127.0.0.1:57484,SC;
+Request received from client at 127.0.0.1:57484, AV;StPaul         ;C:1,Butterflies:1,C++:2
+Sending response to client at 127.0.0.1:57484,SC;
+Request received from client at 127.0.0.1:57484, RV;Richfield      ;C:2
+Sending response to client at 127.0.0.1:57484,SC;
+Request received from client at 127.0.0.1:57484, RV;Bloomington    ;Fortran:1,Java:1
+Sending response to client at 127.0.0.1:57484,SC;
+Request received from client at 127.0.0.1:57484, CV;Survey         ;
+Sending response to client at 127.0.0.1:57484,SC;Cobol:1,Java:2,Fortran:1,SPL:1,Javscript:1,Assembly:1,Ruby:1,C:7,Butterflies:1,C++:2
+Request received from client at 127.0.0.1:57484, CP;Survey         ;
+Sending response to client at 127.0.0.1:57484,SC;
+Request received from client at 127.0.0.1:57484, RW;               ;
+Sending response to client at 127.0.0.1:57484,SC;Winner:C
+Closed connection with client at 127.0.0.1:57484

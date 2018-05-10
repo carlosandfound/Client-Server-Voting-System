@@ -1,0 +1,228 @@
+In file included from client.c:25:0:
+utils.h: In function ‘trimwhitespace’:
+utils.h:33:9: warning: implicit declaration of function ‘isspace’ [-Wimplicit-function-declaration]
+   while(isspace((unsigned char)*str)) str++;
+         ^
+In file included from client.c:26:0:
+map.h: In function ‘createMapNode’:
+map.h:23:15: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   newMap->key = key;
+               ^
+map.h:24:17: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   newMap->value = value;
+                 ^
+map.h: In function ‘insertIntoMap’:
+map.h:54:14: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     n->value = value;
+              ^
+client.c: In function ‘count_candidates’:
+client.c:53:19: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+           (void*)((int)candidate->value + 1));
+                   ^
+client.c:53:11: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+           (void*)((int)candidate->value + 1));
+           ^
+client.c:62:28: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+       sprintf(count, "%d", (int)candidates->value);
+                            ^
+client.c: In function ‘createRequest’:
+client.c:83:22: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(request, "OP;%s%*s;\0", splitLine[1], padding, " ");
+                      ^
+client.c:86:22: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(request, "CP;%s%*s;\0", splitLine[1], padding, " ");
+                      ^
+client.c:90:22: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(request, "AV;%s%*s;%s\0", splitLine[1], padding, " ", voteCounts);
+                      ^
+client.c:95:22: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(request, "RV;%s%*s;%s\0", splitLine[1], padding, " ", voteCounts);
+                      ^
+client.c:99:22: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(request, "CV;%s%*s;\0", splitLine[1], padding, " ");
+                      ^
+client.c:101:22: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(request, "RW;               ;\0");
+                      ^
+client.c:104:22: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(request, "AR;%s%*s;%s\0", splitLine[1], padding, " ", splitLine[2]);
+                      ^
+client.c:106:22: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(request, "%s;               ;\0", splitLine[0]);
+                      ^
+In file included from server.c:25:0:
+utils.h: In function ‘trimwhitespace’:
+utils.h:33:9: warning: implicit declaration of function ‘isspace’ [-Wimplicit-function-declaration]
+   while(isspace((unsigned char)*str)) str++;
+         ^
+In file included from server.c:26:0:
+map.h: In function ‘createMapNode’:
+map.h:23:15: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   newMap->key = key;
+               ^
+map.h:24:17: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   newMap->value = value;
+                 ^
+map.h: In function ‘insertIntoMap’:
+map.h:54:14: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     n->value = value;
+              ^
+server.c: In function ‘addVotes’:
+server.c:161:18: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(msg, "NR;%s\0", region);
+                  ^
+server.c:167:18: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(msg, "RC;%s\0", region);
+                  ^
+server.c:184:66: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       insertIntoMap(poll->candidates, strdup(splitCandidate[0]), (void*)atoi(splitCandidate[1]));
+                                                                  ^
+server.c:189:17: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+         (void*)((int)candidate->value) + atoi(splitCandidate[1]));
+                 ^
+server.c:189:9: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         (void*)((int)candidate->value) + atoi(splitCandidate[1]));
+         ^
+server.c:198:16: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+   sprintf(msg, "SC;\0");
+                ^
+server.c: In function ‘removeVotes’:
+server.c:210:18: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(msg, "NR;%s\0", region);
+                  ^
+server.c:216:18: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(msg, "RC;%s\0", region);
+                  ^
+server.c:231:30: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     if (candidate == NULL || (int)candidate->value - amount < 0) {
+                              ^
+server.c:232:20: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+       sprintf(msg, "IS;%s\0", splitCandidate[0]);
+                    ^
+server.c:240:17: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+         (void*)((int)candidate->value) - amount);
+                 ^
+server.c:240:9: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         (void*)((int)candidate->value) - amount);
+         ^
+server.c:248:16: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+   sprintf(msg, "SC;\0");
+                ^
+server.c: In function ‘setStatus’:
+server.c:260:18: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(msg, "NR;%s\0", region);
+                  ^
+server.c:267:20: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+       sprintf(msg, "PF;%s:%s\0", region, "Inital");
+                    ^
+server.c:269:20: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+       sprintf(msg, "PF;%s:%s\0", region, "Open");
+                    ^
+server.c:271:20: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+       sprintf(msg, "PF;%s:%s\0", region, "Closed");
+                    ^
+server.c:279:18: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(msg, "RR;%s\0", region);
+                  ^
+server.c:307:16: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+   sprintf(msg, "SC;\0");
+                ^
+server.c: In function ‘findWinner’:
+server.c:322:20: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+       sprintf(msg, "RO;%s\0", p->name);
+                    ^
+server.c:328:20: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+       sprintf(msg, "UE;\0");
+                    ^
+server.c:339:43: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+         insertIntoMap(candidates, c->key, (int)c2->value + (int)c->value);
+                                           ^
+server.c:339:60: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+         insertIntoMap(candidates, c->key, (int)c2->value + (int)c->value);
+                                                            ^
+server.c:339:43: warning: passing argument 3 of ‘insertIntoMap’ makes pointer from integer without a cast [-Wint-conversion]
+         insertIntoMap(candidates, c->key, (int)c2->value + (int)c->value);
+                                           ^
+In file included from server.c:26:0:
+map.h:44:13: note: expected ‘const void *’ but argument is of type ‘int’
+ struct Map* insertIntoMap(struct Map* map, const char* key, const void* value) {
+             ^
+server.c:350:10: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     if (((int)c->value) > winnerCount) {
+          ^
+server.c:353:21: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+       winnerCount = (int)c->value;
+                     ^
+server.c:358:18: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(msg, "SC;Winner:%s\0", winnerName);
+                  ^
+server.c:360:18: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(msg, "SC:Winner:No winner\0");
+                  ^
+server.c: In function ‘countVotes’:
+server.c:376:18: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(msg, "NR;%s\0", region);
+                  ^
+server.c:383:3: warning: implicit declaration of function ‘countVotesR’ [-Wimplicit-function-declaration]
+   countVotesR(poll, candidates);
+   ^
+server.c:405:18: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+     sprintf(msg, "SC;No votes.\0");
+                  ^
+server.c:417:36: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     sprintf(info, "%s:%i", c->key, (int)c->value);
+                                    ^
+server.c: At top level:
+server.c:432:6: warning: conflicting types for ‘countVotesR’
+ void countVotesR(struct Poll* poll, struct Map* candidates) {
+      ^
+server.c:383:3: note: previous implicit declaration of ‘countVotesR’ was here
+   countVotesR(poll, candidates);
+   ^
+server.c: In function ‘countVotesR’:
+server.c:440:41: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+       insertIntoMap(candidates, c->key, (int)c2->value + (int)c->value);
+                                         ^
+server.c:440:58: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+       insertIntoMap(candidates, c->key, (int)c2->value + (int)c->value);
+                                                          ^
+server.c:440:41: warning: passing argument 3 of ‘insertIntoMap’ makes pointer from integer without a cast [-Wint-conversion]
+       insertIntoMap(candidates, c->key, (int)c2->value + (int)c->value);
+                                         ^
+In file included from server.c:26:0:
+map.h:44:13: note: expected ‘const void *’ but argument is of type ‘int’
+ struct Map* insertIntoMap(struct Map* map, const char* key, const void* value) {
+             ^
+server.c: In function ‘addRegion’:
+server.c:460:18: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘struct Poll *’ [-Wformat=]
+     sprintf(msg, "NR;%s\0", parent);
+                  ^
+server.c:460:18: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+server.c:483:16: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+   sprintf(msg, "SC;\0");
+                ^
+server.c: In function ‘handleRequest’:
+server.c:534:31: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+         sprintf(responseData, "NL;%s\0", msgStrings[1]);
+                               ^
+server.c:542:31: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+         sprintf(responseData, "NL;%s\0", msgStrings[1]);
+                               ^
+server.c:562:29: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+       sprintf(responseData, "UC;%s\0", msgStrings[0]);
+                             ^
+server.c: In function ‘main’:
+server.c:646:34: warning: passing argument 3 of ‘pthread_create’ from incompatible pointer type [-Wincompatible-pointer-types]
+         pthread_create(&t, NULL, handleRequest, args);
+                                  ^
+In file included from server.c:21:0:
+/usr/include/pthread.h:233:12: note: expected ‘void * (*)(void *)’ but argument is of type ‘void (*)(struct ThreadArgs *)’
+ extern int pthread_create (pthread_t *__restrict __newthread,
+            ^
+server.c:647:24: warning: passing argument 1 of ‘pthread_detach’ makes integer from pointer without a cast [-Wint-conversion]
+         pthread_detach(&t);
+                        ^
+In file included from server.c:21:0:
+/usr/include/pthread.h:271:12: note: expected ‘pthread_t {aka long unsigned int}’ but argument is of type ‘pthread_t * {aka long unsigned int *}’
+ extern int pthread_detach (pthread_t __th) __THROW;
+            ^

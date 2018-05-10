@@ -1,0 +1,202 @@
+Initiated connection with server at 127.0.0.1:4092
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Minneapolis    ;Cobol:1,Java:1,Fortran:1,C:3
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Sending request to server: AV;Richfield      ;SPL:1,Javscript:1,Assembly:1,C:1
+Recieved response from server: SC;
+Closed connection with server at 127.0.0.1:4092
