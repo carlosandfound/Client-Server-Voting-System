@@ -42,14 +42,14 @@ server.c works in the following manner:
  - In handleRequest(), the client request string is parsed and the appropriate function is called based on the 2-character request code to handle the given request
  - At each function call the response string is created and built upon and once the called function exists, the response is sent back to the client
  - This process continues on as long there's a connection between the client and server and the client has requests to be sent to the server
+- Moreover, at each iteration the server prints out the following useful information:
+     - “Server listening on port &lt;PORT_NUMBER&gt;”
+     - “Connection initiated from client at &lt;CLIENT IP&gt;:&lt;CLIENT PORT&gt;”
+     - “Request received from client at &lt;CLIENT IP&gt;:&lt;CLIENT PORT&gt;, &lt;REQUEST_CODE&gt;, ​ &lt;REQUEST_DATA&gt;​ ”
+     - “Sending response to client at &lt;CLIENT IP&gt;:&lt;CLIENT PORT&gt;, &lt;RESPONSE_CODE&gt; ​ &lt;RESPONSE_DATA&gt;​ ”
+     - “Closed connection with client at &lt;CLIENT IP&gt;:&lt;CLIENT PORT&gt;”
 
-Moreover, at each iteration the server prints out the following useful information:
-- “Server listening on port &lt;PORT_NUMBER&gt;”
-- “Connection initiated from client at &lt;CLIENT IP&gt;:&lt;CLIENT PORT&gt;”
-- “Request received from client at &lt;CLIENT IP&gt;:&lt;CLIENT PORT&gt;, &lt;REQUEST_CODE&gt;, ​ &lt;REQUEST_DATA&gt;​ ”
-- “Sending response to client at &lt;CLIENT IP&gt;:&lt;CLIENT PORT&gt;, &lt;RESPONSE_CODE&gt; ​ &lt;RESPONSE_DATA&gt;​ ”
-- “Closed connection with client at &lt;CLIENT IP&gt;:&lt;CLIENT PORT&gt;”
 
-- Makefile completed by both
-- client.c, utils.h, README completed by Carlos
-- server.c, map.h, list.h completed by Jeremy
+Makefile completed by both
+client.c, utils.h, README completed by Carlos
+server.c, map.h, list.h completed by Jeremy
