@@ -51,5 +51,7 @@ server.c works in the following manner:
 
 
 Makefile completed by both
+
 client.c, utils.h, README completed by Carlos
+
 server.c, map.h, list.h completed by Jeremy
