@@ -2,13 +2,13 @@ Names: Carlos Alvarenga, Jeremy Herzog
 
 
 
-### Purpose:
+### Purpose
 Simulate a vote counting system of an election with a client-server program that uses thread programming and synchronization. Requests will be sent to the server
 and the server will send back responses to determine the winner of the election.
 
 
 
-### How to compile & shell commands:
+### How to compile & shell commands
 Included makefile compiles the main driver programs client.c & server.c with the "make" command on the terminal.
 The server program can be run with the following terminal command: "./server &lt;DAG FILE&gt; &lt;Server Port&gt;" where
 - &lt;DAG FILE&gt; is the file containing the specification of the DAG, under any filename
@@ -20,7 +20,7 @@ The client program can be run with the following terminal command: "./client &lt
 
 
 
-### Program functionality:
+### Program functionality
 The main driver programs are client.c and server.c and the supplementary files are utils.h, map.h and list.h
 client.c works in the following manner:
 - The REQ file is first checked to exist
