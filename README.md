@@ -3,8 +3,9 @@ Names: Carlos Alvarenga, Jeremy Herzog
 
 
 ### Purpose
-Simulate a vote counting system of an election with a client-server program that uses thread programming and synchronization. Requests will be sent to the server
-and the server will send back responses to determine the winner of the election.
+Simulate a vote counting system of an election with a client-server program that uses thread programming and synchronization. Requests will be sent to the serverand the server will send back responses to determine the winner of the election.
+
+[Assignment guidelines and specifications](https://github.com/carlosandfound/Client-Server-Voting-System/blob/master/project-requirements.pdf)
 
 
 
